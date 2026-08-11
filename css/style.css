@@ -1,0 +1,192 @@
+:root {
+  --azul-escuro: #0f2540;
+  --azul: #1a4c8b;
+  --azul-claro: #eaf1fb;
+  --verde: #1f9d6c;
+  --texto: #22303f;
+  --texto-claro: #5a6b7c;
+  --borda: #e1e8f0;
+  --branco: #ffffff;
+  --max-width: 960px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--texto);
+  background: var(--branco);
+  line-height: 1.65;
+}
+
+img { max-width: 100%; height: auto; }
+
+a { color: var(--azul); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header.site-header {
+  background: var(--azul-escuro);
+  padding: 18px 0;
+}
+
+header.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.logo {
+  color: var(--branco);
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.logo span { color: var(--verde); }
+
+nav.site-nav a {
+  color: #cfe0f5;
+  margin-left: 22px;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+nav.site-nav a:hover { color: var(--branco); }
+
+.hero {
+  background: linear-gradient(135deg, var(--azul-escuro), var(--azul));
+  color: var(--branco);
+  padding: 64px 0 56px;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 2.1rem;
+  margin: 0 0 16px;
+  line-height: 1.3;
+}
+.hero p {
+  font-size: 1.1rem;
+  color: #d6e4f7;
+  max-width: 640px;
+  margin: 0 auto 26px;
+}
+.btn {
+  display: inline-block;
+  background: var(--verde);
+  color: var(--branco);
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.98rem;
+}
+.btn:hover { background: #178257; text-decoration: none; }
+
+main { padding: 48px 0 64px; }
+
+.section-title {
+  font-size: 1.5rem;
+  margin: 0 0 28px;
+  color: var(--azul-escuro);
+}
+
+.grid-artigos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+}
+
+.card {
+  border: 1px solid var(--borda);
+  border-radius: 10px;
+  padding: 22px;
+  background: var(--branco);
+  transition: box-shadow 0.15s, transform 0.15s;
+}
+.card:hover {
+  box-shadow: 0 6px 18px rgba(15, 37, 64, 0.08);
+  transform: translateY(-2px);
+}
+.card h3 { margin: 0 0 10px; font-size: 1.08rem; }
+.card h3 a { color: var(--texto); }
+.card p { color: var(--texto-claro); font-size: 0.94rem; margin: 0 0 14px; }
+.card .ler-mais { font-size: 0.9rem; font-weight: 600; }
+
+.cta-box {
+  background: var(--azul-claro);
+  border: 1px solid #cfe0f5;
+  border-radius: 10px;
+  padding: 28px 26px;
+  margin: 40px 0;
+  text-align: center;
+}
+.cta-box h2 { margin-top: 0; color: var(--azul-escuro); font-size: 1.25rem; }
+.cta-box p { color: var(--texto-claro); }
+
+article.post {
+  max-width: 760px;
+  margin: 0 auto;
+}
+article.post h1 {
+  font-size: 1.85rem;
+  color: var(--azul-escuro);
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+article.post .meta {
+  color: var(--texto-claro);
+  font-size: 0.9rem;
+  margin-bottom: 28px;
+}
+article.post h2 {
+  font-size: 1.3rem;
+  color: var(--azul-escuro);
+  margin-top: 36px;
+}
+article.post h3 {
+  font-size: 1.1rem;
+  color: var(--azul);
+  margin-top: 24px;
+}
+article.post p { margin: 14px 0; }
+article.post ul, article.post ol { margin: 14px 0; padding-left: 24px; }
+article.post li { margin-bottom: 8px; }
+
+.afiliado-box {
+  border: 1px dashed var(--verde);
+  background: #f2fbf7;
+  border-radius: 8px;
+  padding: 16px 18px;
+  margin: 20px 0;
+  font-size: 0.94rem;
+}
+.afiliado-box strong { color: #178257; }
+
+.breadcrumb {
+  font-size: 0.85rem;
+  color: var(--texto-claro);
+  margin-bottom: 18px;
+}
+.breadcrumb a { color: var(--texto-claro); }
+
+footer.site-footer {
+  background: var(--azul-escuro);
+  color: #a9bcd4;
+  padding: 30px 0;
+  font-size: 0.88rem;
+  text-align: center;
+}
+footer.site-footer a { color: #cfe0f5; }
+
+@media (max-width: 600px) {
+  .hero { padding: 44px 0 40px; }
+  .hero h1 { font-size: 1.6rem; }
+  header.site-header .container { flex-direction: column; align-items: flex-start; }
+  nav.site-nav a { margin-left: 0; margin-right: 18px; }
+}
