@@ -49,8 +49,17 @@ header.site-header .container {
   font-size: 1.4rem;
   font-weight: 700;
   letter-spacing: -0.02em;
+  line-height: 1.15;
 }
 .logo span { color: var(--verde); }
+.logo small {
+  display: block;
+  font-size: 0.62rem;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #9fb7d4;
+}
 
 nav.site-nav a {
   color: #cfe0f5;
