@@ -1,7 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "PowerShell(Start-Process \"c:\\\\Meu primeiro projeto\\\\index.html\")"
-    ]
-  }
-}
