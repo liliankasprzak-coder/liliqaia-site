@@ -53,9 +53,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 12px;
     height: 70px;
   }
-  .logo { font-size: 1.25rem; font-weight: 700; }
+  .logo { font-size: 1.25rem; font-weight: 700; white-space: nowrap; }
   nav { display: flex; gap: 26px; }
   nav a { font-size: 0.92rem; font-weight: 500; color: var(--texto-suave); }
   nav a:hover { color: var(--vermelho); }
@@ -225,6 +226,17 @@
   @media (max-width: 760px) {
     .hero .container, .sobre .container, .local-grid { grid-template-columns: 1fr; }
     nav { display: none; }
+    .hero { text-align: center; padding: 40px 0 50px; }
+    .hero p { margin-left: auto; margin-right: auto; }
+    .sobre .container { text-align: center; }
+    .sobre .stat-row { justify-content: center; }
+    .local-card { text-align: center; }
+    .promo-inner { text-align: center; justify-content: center; }
+  }
+  @media (max-width: 420px) {
+    .logo { font-size: 1.02rem; }
+    header .btn { padding: 9px 15px; font-size: 0.78rem; }
+    .demo-ribbon { font-size: 0.74rem; }
   }
 </style>
 </head>
