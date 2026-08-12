@@ -121,6 +121,24 @@ document.addEventListener("DOMContentLoaded", () => {
   // Formulário -> WhatsApp
   const form = document.getElementById("lead-form");
   if (form) {
+    const chatbotCb = form.querySelector('input[name="solucao"][value="Chatbot no WhatsApp"]');
+    const siteCb = form.querySelector('input[name="solucao"][value="Site Profissional"]');
+    const ambosCb = form.querySelector('input[name="solucao"][value="Ambos"]');
+
+    if (chatbotCb && siteCb && ambosCb) {
+      const syncAmbos = () => {
+        ambosCb.checked = chatbotCb.checked && siteCb.checked;
+      };
+      chatbotCb.addEventListener("change", syncAmbos);
+      siteCb.addEventListener("change", syncAmbos);
+      ambosCb.addEventListener("change", () => {
+        if (ambosCb.checked) {
+          chatbotCb.checked = true;
+          siteCb.checked = true;
+        }
+      });
+    }
+
     form.addEventListener("submit", (e) => {
       e.preventDefault();
       const nome = form.nome.value.trim();
