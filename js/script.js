@@ -31,6 +31,10 @@ function renderTyping() {
   return div;
 }
 
+function scrollToBottom(log) {
+  log.scrollTop = log.scrollHeight;
+}
+
 async function playChatOnce(log) {
   log.innerHTML = "";
   for (const msg of CHAT_SCRIPT) {
@@ -38,12 +42,14 @@ async function playChatOnce(log) {
     if (msg.who === "out") {
       const typing = renderTyping();
       log.appendChild(typing);
+      scrollToBottom(log);
       await wait(1100);
       typing.remove();
     }
     const bubble = renderBubble(msg);
     log.appendChild(bubble);
     requestAnimationFrame(() => bubble.classList.add("show"));
+    scrollToBottom(log);
     await wait(250);
   }
 }
@@ -116,19 +122,17 @@ document.addEventListener("DOMContentLoaded", () => {
     form.addEventListener("submit", (e) => {
       e.preventDefault();
       const nome = form.nome.value.trim();
-      const whats = form.whatsapp.value.trim();
       const solucoes = Array.from(
         form.querySelectorAll('input[name="solucao"]:checked')
       ).map((cb) => cb.value);
 
-      if (!nome || !whats || solucoes.length === 0) {
-        alert("Preencha nome, WhatsApp e selecione ao menos uma solução.");
+      if (!nome || solucoes.length === 0) {
+        alert("Preencha o nome e selecione ao menos uma solução.");
         return;
       }
 
       const message =
         `Olá! Meu nome é ${nome}.\n` +
-        `Meu WhatsApp: ${whats}\n` +
         `Tenho interesse em: ${solucoes.join(", ")}\n` +
         `Quero solicitar um diagnóstico gratuito.`;
 
