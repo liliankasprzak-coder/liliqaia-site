@@ -111,7 +111,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Links de WhatsApp com mensagem pronta
   document.querySelectorAll("[data-wa-message]").forEach((el) => {
-    el.href = waLink(el.getAttribute("data-wa-message"));
+    const number = el.getAttribute("data-wa-number") || WHATSAPP_NUMBER;
+    const message = el.getAttribute("data-wa-message");
+    el.href = `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
     el.target = "_blank";
     el.rel = "noopener";
   });
