@@ -65,6 +65,28 @@ Abaixo está o texto exato e a estrutura visual que o seu site deve ter para con
     *   Certificado de segurança SSL (HTTPS) e proteção anti-ataques.
     *   Integração direta com o botão do seu WhatsApp e pixel de rastreamento de anúncios (Meta/Google).
 
+#### 🤖 Serviço 3: Agentes de IA Autônomos (Inteligência Avançada)
+*   **Como funciona:** Diferente de um chatbot tradicional que segue caminhos rígidos e menus prontos, um Agente de IA tem a capacidade de raciocinar, tomar decisões de forma lógica, consultar documentos da empresa e executar tarefas complexas sozinho. É como ter um funcionário digital trabalhando 24 horas por dia.
+*   **A diferença crucial na prática:**
+    *   *Chatbot Comum:* "Digite 1 para suporte, digite 2 para financeiro." Se o cliente digitar "preciso de ajuda com a parcela", o robô comum trava se não estiver na regra exata.
+    *   *Agente de IA:* Conversa livremente, entende o contexto de perguntas informais ("Oi, esqueci como faço para pagar a parcela atrasada, consegue me mandar a segunda via?"), busca a informação no banco de dados e executa a solução de forma segura.
+
+---
+
+### O PODER DOS AGENTES DE IA: Exemplos Práticos por Setor
+*Use esta seção no seu site para mostrar ao seu cliente exatamente como um Agente de IA se encaixa no dia a dia da empresa dele:*
+
+*   **🍕 Restaurantes, Delivery & Varejo:**
+    *   *O que o Agente faz:* Recomenda produtos com base na preferência do cliente, calcula automaticamente a taxa de entrega pelo CEP, informa o status de preparação do pedido e responde a dúvidas sobre ingredientes ou alergias de forma natural.
+*   **🩺 Consultórios, Clínicas & Estética:**
+    *   *O que o Agente faz:* Consulta a agenda de múltiplos profissionais em tempo real, realiza marcações, reagendamentos ou cancelamentos automáticos, envia orientações pré-consulta (como tempo de jejum ou localização) e faz o pré-cadastro do paciente enviando a ficha digital de forma organizada.
+*   **🏠 Imobiliárias & Construtoras:**
+    *   *O que o Agente faz:* Qualifica o lead interessado perguntando sobre orçamento ideal, número de quartos e localização desejada. Em seguida, busca os imóveis correspondentes no sistema, envia os links com fotos no WhatsApp e agenda uma visita física com o corretor humano.
+*   **💼 Escritórios de Advocacia, Contabilidade ou Consultoria (B2B):**
+    *   *O que o Agente faz:* Coleta e valida documentos enviados pelo cliente (como PDFs, comprovantes ou fotos de CNH), renomeia e armazena os arquivos de forma organizada na pasta correta na nuvem (Google Drive/Dropbox) e notifica a equipe interna pelo Trello ou Slack.
+*   **📦 E-commerces & Lojas Virtuais:**
+    *   *O que o Agente faz:* Rastreia pedidos junto à transportadora informando a localização exata do pacote, atua na recuperação de carrinhos de compras abandonados oferecendo cupons personalizados, e gerencia solicitações de troca e devolução dentro das regras da loja.
+
 ---
 
 ### SEÇÃO 4: A INFRAESTRUTURA (Atrás das Câmeras)
