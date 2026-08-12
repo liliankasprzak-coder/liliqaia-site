@@ -123,11 +123,30 @@ header .container {
   height: 76px;
 }
 .logo {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
   font-family: 'Outfit', sans-serif;
   font-size: 1.35rem;
   font-weight: 700;
 }
-.logo span { color: var(--verde); }
+.logo span {
+  color: var(--verde);
+  text-transform: uppercase;
+}
+.logo-deco {
+  position: absolute;
+  left: -14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 130px;
+  height: 46px;
+  color: var(--verde);
+  opacity: 0.4;
+  pointer-events: none;
+  z-index: 0;
+}
+.logo .logo-text { position: relative; z-index: 1; }
 
 nav.site-nav {
   display: flex;
