@@ -1,0 +1,136 @@
+# Documento de Requisitos do Produto (PRD) & Copywriting: Landing Page de Alta Conversão
+## Agência de Automação & Desenvolvimento Web (Chatbots WhatsApp + Sites)
+
+Este documento contém o planejamento estrutural, a estratégia de vendas (copywriting) e os requisitos visuais/técnicos para criar a sua landing page oficial de vendas. 
+
+---
+
+## 1. Objetivos da Landing Page
+*   **Gerar Leads Qualificados:** Atrair donos de comércios locais, empresas de serviço e e-commerces interessados em automatizar atendimento e ter um site profissional.
+*   **Demonstrar Valor Imediato:** Mostrar o impacto financeiro e operacional de ter um chatbot no WhatsApp respondendo em segundos.
+*   **Vender a Estrutura Técnica como Diferencial:** Traduzir a robustez da sua infraestrutura (VPS, n8n, Evolution API, Cloudflare) em benefícios de velocidade, segurança e confiabilidade para o cliente.
+
+---
+
+## 2. Estrutura de Seções da Landing Page (Copywriting)
+
+Abaixo está o texto exato e a estrutura visual que o seu site deve ter para converter visitantes em clientes.
+
+---
+
+### SEÇÃO 1: HERO (Apresentação de Impacto)
+*Esta é a primeira dobra do site. Ela deve prender a atenção em menos de 3 segundos.*
+
+*   **Título Principal (H1):** 
+    > **Pare de perder clientes por demora no WhatsApp. Automatize seu atendimento e venda 24/7.**
+*   **Subtítulo (H2):** 
+    > Criamos robôs de atendimento inteligente integrados ao seu WhatsApp e sites de alta performance que convertem visitantes em clientes de forma automática.
+*   **Vídeo de Demonstração (Lado Direito ou Centralizado):**
+    *   *Elemento Visual:* Um frame de vídeo com bordas arredondadas e efeito de sombra suave (glassmorphism).
+    *   *Ideia para o Vídeo:* Um screencast curto (1 minuto) gravado no celular mostrando um cliente real mandando mensagem para um comércio fictício (ex: uma pizzaria ou clínica) e o chatbot respondendo instantaneamente, enviando cardápio/tabela, qualificando o lead e finalizando o agendamento/pedido em tempo recorde.
+*   **Botões de Ação (CTAs):**
+    *   **Botão Principal (Destaque):** `[ Testar Demonstração Grátis ]` *(Link direciona para o seu próprio chatbot no WhatsApp)*
+    *   **Botão Secundário:** `[ Quero um Orçamento ]` *(Rola a página para o formulário de contato)*
+
+---
+
+### SEÇÃO 2: O GRANDE PROBLEMA (A Dor do Comércio)
+*Aqui geramos conexão emocional mostrando que entendemos a dor do empresário.*
+
+*   **Título:** 
+    > **Você sabia que 74% dos clientes compram da empresa que responde primeiro no WhatsApp?**
+*   **Três Dores Frequentes:**
+    1.  **"Estou perdendo vendas no horário de pico:"** Clientes mandam mensagem à noite ou no final de semana e desistem de comprar porque ninguém responde.
+    2.  **"Minha equipe está sobrecarregada:"** Seus funcionários passam horas respondendo às mesmas perguntas repetitivas ("Qual o valor?", "Onde fica?", "Qual o horário?").
+    3.  **"Falta de organização nos contatos:"** Mensagens se perdem, você não sabe quem foi atendido e perde a chance de fazer remarketing.
+
+---
+
+### SEÇÃO 3: A SOLUÇÃO (O que nós fazemos)
+*Apresentamos os dois serviços principais como a cura para as dores descritas.*
+
+#### 🛠️ Serviço 1: Chatbots Inteligentes para WhatsApp
+*   **Como funciona:** Conectamos um robô inteligente diretamente ao seu número oficial do WhatsApp. Ele não apenas envia mensagens prontas, mas entende o que o cliente quer, envia mídias, faz cadastros e integra com suas planilhas ou CRM.
+*   **Recursos Inclusos:**
+    *   Triagem inteligente (direciona para o setor correto se precisar de humano).
+    *   Envio automático de PDFs, cardápios e catálogos.
+    *   Agendamento de horários integrado ao Google Agenda.
+    *   Respostas automáticas fora do horário de expediente.
+
+#### 🌐 Serviço 2: Criação de Sites & Landing Pages de Alta Performance
+*   **Como funciona:** Sites rápidos, seguros e otimizados para o Google que servem como a vitrine perfeita para o seu negócio atrair novos clientes diariamente.
+*   **Recursos Inclusos:**
+    *   Layouts modernos e 100% responsivos (perfeitos no celular).
+    *   Otimização de velocidade para carregar em menos de 2 segundos.
+    *   Certificado de segurança SSL (HTTPS) e proteção anti-ataques.
+    *   Integração direta com o botão do seu WhatsApp e pixel de rastreamento de anúncios (Meta/Google).
+
+---
+
+### SEÇÃO 4: A INFRAESTRUTURA (Atrás das Câmeras)
+*Aqui usamos a sua estrutura técnica (VPS, Easypanel, n8n, Evolution API, Cloudflare) traduzida em valor comercial para grandes e médios comércios.*
+
+> [!NOTE]
+> **Por que a nossa solução é superior às plataformas prontas de R$ 200/mês?**
+> Nós não alugamos uma conta em uma ferramenta compartilhada. Nós criamos uma **infraestrutura própria e dedicada para a sua empresa**.
+
+*   **Segurança com Cloudflare:** Seus dados e o contato dos seus clientes protegidos por criptografia e blindagem de nível bancário contra quedas e invasões.
+*   **Servidores Dedicados VPS (Easypanel):** Seu site e robôs rodam em servidores de alta velocidade dedicados à sua empresa, garantindo que o atendimento nunca fique lento, mesmo com milhares de acessos simultâneos.
+*   **Personalização Ilimitada com n8n:** Não ficamos presos a fluxos rígidos. Conseguimos integrar seu chatbot com qualquer sistema de vendas, banco de dados ou ERP que você já utilize.
+*   **Conexão Direta e Estável (Evolution API):** Conexão ultra-rápida com o WhatsApp, reduzindo o tempo de resposta das mensagens para menos de 2 segundos.
+
+---
+
+### SEÇÃO 5: COMO FUNCIONA O PROCESSO
+*Passo a passo simples para tirar a objeção de "será que é muito difícil para mim?".*
+
+1.  **Reunião de Diagnóstico:** Entendemos como funciona o seu atendimento hoje e mapeamos os gargalos.
+2.  **Criação do Fluxo & Site:** Desenhamos o mapa do chatbot e criamos o design do seu site para sua aprovação.
+3.  **Integração e Testes:** Conectamos tudo no seu número de WhatsApp e colocamos o site no ar.
+4.  **Entrega e Acompanhamento:** Treinamos você e sua equipe para usar o painel e acompanhamos os resultados.
+
+---
+
+### SEÇÃO 6: FAQ (Perguntas Frequentes)
+*   **O chatbot funciona com o meu número atual?** Sim, o robô pode ser instalado no número que você já usa para atender seus clientes.
+*   **Se eu precisar falar com o cliente, o robô para de funcionar?** Não! A qualquer momento você ou sua equipe podem assumir a conversa pelo computador ou celular, e o robô aguarda o atendimento humano finalizar para reassumir.
+*   **Preciso ter computador ligado 24h?** Não. Toda a infraestrutura roda na nuvem em nossos servidores VPS dedicados. Tudo funciona mesmo se seu celular estiver desligado.
+*   **Quanto tempo demora para ficar pronto?** O prazo médio de entrega para sites e chatbots estruturados é de 7 a 15 dias úteis após a aprovação do projeto.
+
+---
+
+### SEÇÃO 7: CHAMADA PARA AÇÃO FINAL (CTA) & CONTATO
+*   **Título:** 
+    > **Pronto para escalar o seu atendimento e vender mais?**
+*   **Subtítulo:** 
+    > Fale conosco hoje mesmo. Preencha o formulário ou clique no botão abaixo para conversar diretamente no nosso WhatsApp.
+*   **Formulário de Contato Simplificado:**
+    *   Nome Comercial / Nome do Dono
+    *   WhatsApp de Contato
+    *   Qual solução precisa? `[ ] Chatbot no WhatsApp` `[ ] Site Profissional` `[ ] Ambos`
+*   **Botão de Envio:** `[ Solicitar Diagnóstico Gratuito ]`
+
+---
+
+## 3. Diretrizes de Design & Estética (Recomendações Visuais)
+
+Para que o site seja **"muito chamativo"** (Premium e Moderno), siga estes padrões visuais na hora do desenvolvimento frontend:
+
+*   **Paleta de Cores:**
+    *   *Fundo (Dark Mode):* Azul muito escuro ou Cinza-grafite quase preto (`#0D0F12` ou `#0B0C10`).
+    *   *Cor de Destaque (Ação/Botões):* Verde Neon vibrante (representando o WhatsApp: `#25D366` ou `#00FF66`) ou Ciano tecnológico (`#00F0FF`).
+    *   *Texto:* Branco puro (`#FFFFFF`) para títulos e cinza claro (`#A0AEC0`) para parágrafos.
+*   **Tipografia:**
+    *   Use fontes modernas do Google Fonts como **Inter** ou **Outfit** para uma leitura limpa e visual de alta tecnologia.
+*   **Efeitos Visuais (Glassmorphism):**
+    *   Cards de benefícios e caixas de depoimento com fundo semi-transparente, bordas finas com gradiente suave e efeito de desfoque de fundo (`backdrop-filter: blur(12px)`).
+*   **Micro-animações:**
+    *   Efeito de *hover* nos botões (aumentar levemente o brilho ou mudar sutilmente de tamanho).
+    *   Transições suaves ao rolar a página (fade-in dos cards de benefícios).
+
+---
+
+## 4. Próximos Passos
+1.  **Aprovação do Conteúdo:** Avalie se o tom da copy está alinhado com a sua marca.
+2.  **Roteiro do Vídeo:** Gravar a demonstração simples do chatbot funcionando no WhatsApp para colocar no espaço reservado do site.
+3.  **Desenvolvimento do Site:** Decidir se criará o site utilizando código puro (HTML/CSS/JS) para máxima performance, ou se usará ferramentas integradas no Easypanel (como WordPress/Elementor) para agilizar o lançamento.
