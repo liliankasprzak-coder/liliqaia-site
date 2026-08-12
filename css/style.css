@@ -130,7 +130,7 @@ header .container {
   font-size: 1.35rem;
   font-weight: 700;
 }
-.logo span {
+.logo-text span {
   color: var(--verde);
   text-transform: uppercase;
 }
