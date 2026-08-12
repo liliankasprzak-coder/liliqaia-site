@@ -134,9 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       const message =
-        `Olá! Meu nome é ${nome}.\n` +
-        `Tenho interesse em: ${solucoes.join(", ")}\n` +
-        `Quero solicitar um diagnóstico gratuito.`;
+        `Olá! Meu nome é ${nome} e tenho interesse em: ${solucoes.join(", ")}.`;
 
       window.open(waLink(message), "_blank", "noopener");
     });
