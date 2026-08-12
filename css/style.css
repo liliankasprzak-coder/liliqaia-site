@@ -354,6 +354,25 @@ nav.site-nav a.nav-link:hover { color: var(--texto); }
   align-items: center;
 }
 
+.agent-demo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  margin: 56px 0 12px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+.agent-demo-text h3 {
+  font-size: 1.35rem;
+  margin: 10px 0 14px;
+  color: var(--texto);
+}
+.agent-demo-text p {
+  color: var(--texto-suave);
+  font-size: 0.96rem;
+}
+
 /* ---------- Problema ---------- */
 .problem-stat {
   font-size: 1.05rem;
@@ -633,6 +652,8 @@ footer.site-footer .logo { justify-content: center; margin-bottom: 10px; display
   .eyebrow, .section-title, .section-sub { text-align: center; margin-left: auto; margin-right: auto; }
   .infra-note { text-align: center; }
   .example-cta { justify-content: center; }
+  .agent-demo { grid-template-columns: 1fr; text-align: center; }
+  .agent-demo .eyebrow { margin: 0 auto; }
   nav.site-nav { position: fixed; top: 76px; left: 0; right: 0; background: rgba(11,12,16,0.98); flex-direction: column; align-items: flex-start; padding: 20px 24px 30px; gap: 18px; border-bottom: 1px solid rgba(255,255,255,0.08); transform: translateY(-140%); transition: transform 0.3s ease; }
   nav.site-nav.open { transform: translateY(0); }
   .nav-toggle { display: flex; }

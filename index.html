@@ -9,13 +9,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=11">
+<link rel="stylesheet" href="css/style.css?v=12">
 </head>
 <body>
 
 <header class="site-header">
   <div class="container">
-    <div class="logo">
+    <a href="#" class="logo" aria-label="Voltar ao topo">
       <svg class="logo-deco" viewBox="0 0 130 46" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <g stroke="currentColor" stroke-width="1.4" fill="none">
           <line x1="8" y1="34" x2="34" y2="12"/>
@@ -34,7 +34,7 @@
         </g>
       </svg>
       <span class="logo-text">Liliqa<span>ia</span></span>
-    </div>
+    </a>
     <nav class="site-nav">
       <a class="nav-link" href="#solucao">Serviços</a>
       <a class="nav-link" href="#setores">Agentes de IA</a>
@@ -197,6 +197,24 @@
       </div>
     </div>
 
+    <div class="agent-demo">
+      <div class="agent-demo-text fade-in">
+        <span class="eyebrow">Simulação real</span>
+        <h3>Veja um Agente de IA financeiro em ação</h3>
+        <p>O dono do negócio manda as vendas do dia por texto — o agente organiza tudo numa planilha, calcula o total e até estima o imposto do mês automaticamente. Sem digitar nada numa planilha manualmente.</p>
+      </div>
+      <div class="phone-mockup fade-in">
+        <div class="phone-header">
+          <div class="avatar">A</div>
+          <div class="who">
+            <strong>Agente IA · Financeiro</strong>
+            <span>● Atendente virtual ativa</span>
+          </div>
+        </div>
+        <div class="chat-log" id="agent-chat-log"></div>
+      </div>
+    </div>
+
     <div class="example-cta fade-in">
       <a class="btn btn-primary" href="#contato">Quero um agente de IA assim no meu negócio</a>
     </div>
@@ -340,7 +358,7 @@
         <div class="checkbox-group">
           <label><input type="checkbox" name="solucao" value="Chatbot no WhatsApp"> Chatbot no WhatsApp</label>
           <label><input type="checkbox" name="solucao" value="Site Profissional"> Site Profissional</label>
-          <label><input type="checkbox" name="solucao" value="Ambos"> Ambos</label>
+          <label><input type="checkbox" name="solucao" value="Todos"> Todos</label>
           <label><input type="checkbox" name="solucao" value="Agente de IA (financeiro/outros)"> Agente de IA (financeiro/outros)</label>
         </div>
       </div>
@@ -375,6 +393,6 @@
   </div>
 </footer>
 
-<script src="js/script.js?v=11"></script>
+<script src="js/script.js?v=12"></script>
 </body>
 </html>

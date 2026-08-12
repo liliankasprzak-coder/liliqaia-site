@@ -17,6 +17,15 @@ const CHAT_SCRIPT = [
   { who: "out", tag: "Lia", text: "Aqui está! 📎 cardapio-pizzaria.pdf — Qualquer dúvida, é só chamar!" },
 ];
 
+const AGENT_CHAT_SCRIPT = [
+  { who: "in", tag: "Dono do negócio", text: "Vendas de hoje: 12 pizzas R$45, 8 refris R$8" },
+  { who: "out", tag: "Agente IA", text: "Anotado! ✅ Já atualizei sua planilha: total do dia R$604,00 📊" },
+  { who: "in", tag: "Dono do negócio", text: "Já calcula o imposto do mês também?" },
+  { who: "out", tag: "Agente IA", text: "Claro! Faturamento do mês: R$18.400. DAS estimado (6%): R$1.104,00 💰" },
+  { who: "in", tag: "Dono do negócio", text: "Perfeito, muito mais rápido assim" },
+  { who: "out", tag: "Agente IA", text: "😊 Planilha e relatório atualizados. Posso separar esse valor pra você não esquecer o vencimento!" },
+];
+
 function renderBubble(msg) {
   const div = document.createElement("div");
   div.className = `bubble ${msg.who}`;
@@ -35,9 +44,9 @@ function scrollToBottom(log) {
   log.scrollTop = log.scrollHeight;
 }
 
-async function playChatOnce(log) {
+async function playChatOnce(log, script) {
   log.innerHTML = "";
-  for (const msg of CHAT_SCRIPT) {
+  for (const msg of script) {
     await wait(msg.who === "in" ? 700 : 350);
     if (msg.who === "out") {
       const typing = renderTyping();
@@ -54,12 +63,12 @@ async function playChatOnce(log) {
   }
 }
 
-async function startChatLoop() {
-  const log = document.getElementById("chat-log");
+async function startChatLoop(logId, script) {
+  const log = document.getElementById(logId);
   if (!log) return;
   // eslint-disable-next-line no-constant-condition
   while (true) {
-    await playChatOnce(log);
+    await playChatOnce(log, script);
     await wait(2600);
   }
 }
@@ -90,7 +99,23 @@ document.addEventListener("DOMContentLoaded", () => {
   );
   revealTargets.forEach((el) => observer.observe(el));
 
-  startChatLoop();
+  startChatLoop("chat-log", CHAT_SCRIPT);
+
+  const agentLog = document.getElementById("agent-chat-log");
+  if (agentLog) {
+    const agentObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            startChatLoop("agent-chat-log", AGENT_CHAT_SCRIPT);
+            agentObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+    agentObserver.observe(agentLog);
+  }
 
   // FAQ accordion
   document.querySelectorAll(".faq-item").forEach((item) => {
@@ -123,18 +148,18 @@ document.addEventListener("DOMContentLoaded", () => {
   if (form) {
     const chatbotCb = form.querySelector('input[name="solucao"][value="Chatbot no WhatsApp"]');
     const siteCb = form.querySelector('input[name="solucao"][value="Site Profissional"]');
-    const ambosCb = form.querySelector('input[name="solucao"][value="Ambos"]');
+    const agenteCb = form.querySelector('input[name="solucao"][value="Agente de IA (financeiro/outros)"]');
+    const todosCb = form.querySelector('input[name="solucao"][value="Todos"]');
 
-    if (chatbotCb && siteCb && ambosCb) {
-      const syncAmbos = () => {
-        ambosCb.checked = chatbotCb.checked && siteCb.checked;
+    if (chatbotCb && siteCb && agenteCb && todosCb) {
+      const outros = [chatbotCb, siteCb, agenteCb];
+      const syncTodos = () => {
+        todosCb.checked = outros.every((cb) => cb.checked);
       };
-      chatbotCb.addEventListener("change", syncAmbos);
-      siteCb.addEventListener("change", syncAmbos);
-      ambosCb.addEventListener("change", () => {
-        if (ambosCb.checked) {
-          chatbotCb.checked = true;
-          siteCb.checked = true;
+      outros.forEach((cb) => cb.addEventListener("change", syncTodos));
+      todosCb.addEventListener("change", () => {
+        if (todosCb.checked) {
+          outros.forEach((cb) => (cb.checked = true));
         }
       });
     }
