@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pizzaria da Praça — Pizza Artesanal</title>
+<meta name="description" content="Site de exemplo criado pela Liliqaia: Pizzaria da Praça, pizza artesanal com pedido direto pelo WhatsApp.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --creme: #fff8f0;
+    --vermelho: #c1272d;
+    --vermelho-escuro: #8f1c21;
+    --laranja: #ff8a1e;
+    --texto: #2b1b12;
+    --texto-suave: #6b5548;
+    --card: #ffffff;
+    --borda: #f0e2d3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--creme);
+    color: var(--texto);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+  }
+  h1, h2, h3 { font-family: 'Poppins', sans-serif; margin: 0; line-height: 1.2; }
+  img { max-width: 100%; }
+  a { text-decoration: none; color: inherit; }
+  .container { max-width: 1040px; margin: 0 auto; padding: 0 22px; }
+
+  .demo-ribbon {
+    background: var(--vermelho-escuro);
+    color: #fff;
+    text-align: center;
+    font-size: 0.82rem;
+    padding: 9px 14px;
+  }
+  .demo-ribbon a { text-decoration: underline; font-weight: 600; }
+
+  header {
+    background: #fff;
+    border-bottom: 1px solid var(--borda);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+  }
+  .logo { font-size: 1.25rem; font-weight: 700; }
+  nav { display: flex; gap: 26px; }
+  nav a { font-size: 0.92rem; font-weight: 500; color: var(--texto-suave); }
+  nav a:hover { color: var(--vermelho); }
+  .btn {
+    display: inline-block;
+    background: var(--vermelho);
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 0.92rem;
+    transition: background 0.2s, transform 0.2s;
+  }
+  .btn:hover { background: var(--vermelho-escuro); transform: translateY(-2px); }
+
+  .hero {
+    background: radial-gradient(circle at 80% 20%, rgba(255,138,30,0.15), transparent 55%);
+    padding: 70px 0 60px;
+  }
+  .hero .container { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; align-items: center; }
+  .hero h1 { font-size: clamp(1.9rem, 4vw, 2.7rem); margin-bottom: 18px; }
+  .hero h1 span { color: var(--vermelho); }
+  .hero p { color: var(--texto-suave); font-size: 1.05rem; margin-bottom: 26px; max-width: 460px; }
+  .pizza-badge {
+    width: 100%;
+    aspect-ratio: 1;
+    max-width: 320px;
+    margin: 0 auto;
+    border-radius: 50%;
+    padding: 8px;
+    background: linear-gradient(135deg, #ffd28a, var(--laranja) 60%, var(--vermelho) 100%);
+    box-shadow: 0 25px 50px rgba(193,39,45,0.25);
+  }
+  .pizza-badge img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    border: 4px solid #fff;
+  }
+
+  section { padding: 64px 0; }
+
+  .promo { padding: 0; background: linear-gradient(90deg, var(--laranja), var(--vermelho)); color: #fff; }
+  .promo-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+    padding: 30px 0;
+  }
+  .promo-tag {
+    display: inline-block;
+    background: rgba(255,255,255,0.2);
+    padding: 5px 14px;
+    border-radius: 100px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .promo-text h2 { font-size: 1.3rem; margin-bottom: 6px; }
+  .promo-text h2 strong { font-family: 'Poppins', sans-serif; }
+  .promo-text p { color: rgba(255,255,255,0.88); font-size: 0.9rem; }
+  .promo-btn { background: #fff; color: var(--vermelho); flex-shrink: 0; }
+  .promo-btn:hover { background: #ffe9d6; }
+  .section-title { font-size: 1.9rem; margin-bottom: 10px; text-align: center; }
+  .section-sub { text-align: center; color: var(--texto-suave); margin-bottom: 40px; }
+
+  .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+  }
+  .menu-card {
+    background: var(--card);
+    border: 1px solid var(--borda);
+    border-radius: 14px;
+    overflow: hidden;
+  }
+  .menu-card .pizza-photo {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    display: block;
+  }
+  .menu-card .card-body { padding: 20px 22px; }
+  .menu-card h3 { font-size: 1.05rem; margin-bottom: 6px; }
+  .menu-card p { color: var(--texto-suave); font-size: 0.88rem; margin-bottom: 14px; min-height: 40px; }
+  .menu-card .price-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .menu-card .price { font-weight: 700; color: var(--vermelho); }
+  .menu-card .mini-btn {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--vermelho);
+    border: 1px solid var(--vermelho);
+    border-radius: 100px;
+    padding: 6px 14px;
+  }
+  .menu-card .mini-btn:hover { background: var(--vermelho); color: #fff; }
+
+  .sobre { background: #fff; border-top: 1px solid var(--borda); border-bottom: 1px solid var(--borda); }
+  .sobre .container { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+  .sobre p { color: var(--texto-suave); margin-bottom: 14px; }
+  .stat-row { display: flex; gap: 30px; margin-top: 20px; }
+  .stat-row div strong { display: block; font-size: 1.5rem; color: var(--vermelho); font-family: 'Poppins', sans-serif; }
+  .stat-row div span { font-size: 0.8rem; color: var(--texto-suave); }
+  .quote-card {
+    background: var(--creme);
+    border: 1px solid var(--borda);
+    border-radius: 14px;
+    padding: 26px;
+    font-style: italic;
+    color: var(--texto);
+  }
+  .quote-card .who { margin-top: 14px; font-style: normal; font-weight: 600; font-size: 0.88rem; color: var(--vermelho); }
+
+  .local-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+  .local-card {
+    background: var(--card);
+    border: 1px solid var(--borda);
+    border-radius: 14px;
+    padding: 26px;
+  }
+  .local-card h3 { font-size: 1rem; margin-bottom: 12px; }
+  .local-card p { color: var(--texto-suave); font-size: 0.92rem; margin-bottom: 6px; }
+  .map-box {
+    height: 100%;
+    min-height: 160px;
+    border-radius: 14px;
+    background: repeating-linear-gradient(45deg, #f3e6d8, #f3e6d8 10px, #eddcc9 10px, #eddcc9 20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--texto-suave);
+    font-size: 0.85rem;
+    border: 1px solid var(--borda);
+  }
+
+  .cta-final {
+    text-align: center;
+    background: linear-gradient(135deg, var(--vermelho), var(--vermelho-escuro));
+    color: #fff;
+    border-radius: 20px;
+    margin: 0 22px;
+    padding: 54px 24px;
+  }
+  .cta-final h2 { font-size: 1.8rem; margin-bottom: 14px; }
+  .cta-final p { color: rgba(255,255,255,0.85); margin-bottom: 26px; }
+  .cta-final .btn { background: #fff; color: var(--vermelho); }
+  .cta-final .btn:hover { background: #ffe9d6; }
+
+  footer {
+    text-align: center;
+    padding: 30px 22px;
+    color: var(--texto-suave);
+    font-size: 0.85rem;
+  }
+
+  @media (max-width: 760px) {
+    .hero .container, .sobre .container, .local-grid { grid-template-columns: 1fr; }
+    nav { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="demo-ribbon">
+  🍕 Este é um site de demonstração criado pela <strong>Liliqaia</strong> — <a href="../../index.html" target="_parent">conheça o serviço completo</a>
+</div>
+
+<header>
+  <div class="container">
+    <div class="logo">🍕 Pizzaria da Praça</div>
+    <nav>
+      <a href="#promo">Promoção</a>
+      <a href="#cardapio">Cardápio</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#localizacao">Localização</a>
+    </nav>
+    <a class="btn" href="https://wa.me/5541992628078?text=Ol%C3%A1!%20Vi%20o%20site%20de%20exemplo%20da%20Pizzaria%20da%20Pra%C3%A7a%20e%20quero%20um%20site%20assim%20para%20o%20meu%20neg%C3%B3cio!" target="_blank" rel="noopener">Peça no WhatsApp</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div>
+      <h1>Pizza artesanal, <span>direto no seu WhatsApp</span>, em poucos cliques</h1>
+      <p>Massa de fermentação natural, ingredientes selecionados e entrega rápida no seu bairro. Peça agora sem complicação.</p>
+      <a class="btn" href="https://wa.me/5541992628078?text=Ol%C3%A1!%20Vi%20o%20site%20de%20exemplo%20da%20Pizzaria%20da%20Pra%C3%A7a%20e%20quero%20fazer%20um%20pedido." target="_blank" rel="noopener">Fazer Pedido no WhatsApp</a>
+    </div>
+    <div class="pizza-badge">
+      <img src="images/hero-pizza.jpg" alt="Pizza artesanal Pizzaria da Praça">
+    </div>
+  </div>
+</section>
+
+<section id="promo" class="promo">
+  <div class="container promo-inner">
+    <div class="promo-text">
+      <span class="promo-tag">🔥 Promoção fictícia da semana</span>
+      <h2>Toda terça-feira: pizza grande + refrigerante 2L por <strong>R$ 54,90</strong></h2>
+      <p>Válido só pra pedidos feitos pelo WhatsApp. Exemplo ilustrativo — não é uma oferta real.</p>
+    </div>
+    <a class="btn promo-btn" href="https://wa.me/5541992628078?text=Ol%C3%A1!%20Vi%20a%20promo%C3%A7%C3%A3o%20de%20ter%C3%A7a%20(pizza%20%2B%20refrigerante)%20no%20site%20de%20exemplo%20e%20quero%20aproveitar." target="_blank" rel="noopener">Aproveitar Promoção</a>
+  </div>
+</section>
+
+<section id="cardapio">
+  <div class="container">
+    <h2 class="section-title">Cardápio</h2>
+    <p class="section-sub">Nossas pizzas mais pedidas da semana</p>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <img class="pizza-photo" src="images/margherita.jpg" alt="Pizza Margherita">
+        <div class="card-body">
+          <h3>Margherita</h3>
+          <p>Molho de tomate artesanal, muçarela de búfala, manjericão fresco.</p>
+          <div class="price-row"><span class="price">R$ 42,90</span><a class="mini-btn" href="https://wa.me/5541992628078?text=Ol%C3%A1!%20Quero%20pedir%20uma%20pizza%20Margherita%20(exemplo%20do%20site)." target="_blank" rel="noopener">Pedir</a></div>
+        </div>
+      </div>
+      <div class="menu-card">
+        <img class="pizza-photo" src="images/pepperoni.jpg" alt="Pizza Pepperoni">
+        <div class="card-body">
+          <h3>Pepperoni</h3>
+          <p>Pepperoni artesanal, muçarela e orégano importado.</p>
+          <div class="price-row"><span class="price">R$ 46,90</span><a class="mini-btn" href="https://wa.me/5541992628078?text=Ol%C3%A1!%20Quero%20pedir%20uma%20pizza%20Pepperoni%20(exemplo%20do%20site)." target="_blank" rel="noopener">Pedir</a></div>
+        </div>
+      </div>
+      <div class="menu-card">
+        <img class="pizza-photo" src="images/funghi.jpg" alt="Pizza Funghi">
+        <div class="card-body">
+          <h3>Funghi</h3>
+          <p>Mix de cogumelos frescos, muçarela e azeite trufado.</p>
+          <div class="price-row"><span class="price">R$ 48,90</span><a class="mini-btn" href="https://wa.me/5541992628078?text=Ol%C3%A1!%20Quero%20pedir%20uma%20pizza%20Funghi%20(exemplo%20do%20site)." target="_blank" rel="noopener">Pedir</a></div>
+        </div>
+      </div>
+      <div class="menu-card">
+        <img class="pizza-photo" src="images/chocolate-morango.jpg" alt="Pizza doce de Chocolate com Morango">
+        <div class="card-body">
+          <h3>Chocolate com Morango</h3>
+          <p>Chocolate meio-amargo derretido e morangos frescos fatiados.</p>
+          <div class="price-row"><span class="price">R$ 39,90</span><a class="mini-btn" href="https://wa.me/5541992628078?text=Ol%C3%A1!%20Quero%20pedir%20uma%20pizza%20Chocolate%20com%20Morango%20(exemplo%20do%20site)." target="_blank" rel="noopener">Pedir</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sobre" id="sobre">
+  <div class="container">
+    <div>
+      <h2 class="section-title" style="text-align:left">Sobre a Pizzaria da Praça</h2>
+      <p>Desde 2015 servindo o bairro com pizzas de massa de fermentação natural (24h) e ingredientes selecionados direto de pequenos produtores locais.</p>
+      <p>Hoje, praticamente todo o nosso atendimento e pedidos acontecem pelo WhatsApp — de forma automática, rápida e sem fila de espera.</p>
+      <div class="stat-row">
+        <div><strong>9 anos</strong><span>de bairro</span></div>
+        <div><strong>+40 mil</strong><span>pizzas entregues</span></div>
+        <div><strong>4.9★</strong><span>avaliação média</span></div>
+      </div>
+    </div>
+    <div class="quote-card">
+      "Desde que colocamos o atendimento automático no WhatsApp, não perdemos mais nenhum pedido no horário de pico. Simplesmente funciona."
+      <div class="who">— Dona Marta, proprietária</div>
+    </div>
+  </div>
+</section>
+
+<section id="localizacao">
+  <div class="container">
+    <h2 class="section-title">Localização & Horário</h2>
+    <p class="section-sub">Venha nos visitar ou peça no conforto de casa</p>
+    <div class="local-grid">
+      <div class="local-card">
+        <h3>📍 Endereço</h3>
+        <p>Praça das Flores, 123 — Centro</p>
+        <p>Curitiba — PR</p>
+        <h3 style="margin-top:18px">🕒 Horário</h3>
+        <p>Terça a domingo, 18h às 23h30</p>
+        <h3 style="margin-top:18px">📱 Contato</h3>
+        <p>(41) 99262-8078</p>
+      </div>
+      <div class="map-box">Mapa ilustrativo (exemplo)</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="cta-final">
+    <h2>Gostou do site da Pizzaria da Praça?</h2>
+    <p>Esse é só um exemplo. Podemos criar um site assim — no seu estilo — para o seu negócio.</p>
+    <a class="btn" href="https://wa.me/5541992628078?text=Ol%C3%A1!%20Vi%20o%20site%20de%20exemplo%20da%20Pizzaria%20da%20Pra%C3%A7a%20e%20quero%20um%20site%20assim%20para%20o%20meu%20neg%C3%B3cio!" target="_blank" rel="noopener">Quero um site assim</a>
+  </div>
+</section>
+
+<footer>
+  Site de demonstração criado por <a href="../../index.html" target="_parent" style="text-decoration:underline; font-weight:600;">Liliqaia</a> — não é um estabelecimento real.
+</footer>
+
+</body>
+</html>
