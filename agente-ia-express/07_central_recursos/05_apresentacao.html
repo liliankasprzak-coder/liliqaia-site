@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>05 — Apresentação | Central de Recursos</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="brand">Agente IA <span>Express</span></div>
+    <a class="back" href="index.html">← Central de Recursos</a>
+  </div>
+</header>
+
+<section class="tpl-abertura" style="padding-top:80px; padding-bottom:50px;">
+  <div class="container">
+    <span class="eyebrow">Categoria 05</span>
+    <h1>Prompts de <span class="hl">Apresentação</span></h1>
+    <p class="subtitle">Use pra transformar o que você construiu em algo que vende.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 41</div>
+      <h3>Explicar o agente em uma frase simples</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Módulo 5, ao montar a oferta</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[INSTRUÇÕES DO AGENTE]</span></div>
+      </div>
+      <div class="p-box"><pre>Resuma o que este agente faz em uma frase que qualquer pessoa leiga entenda, sem usar a palavra "IA" ou termos técnicos: [INSTRUÇÕES DO AGENTE]</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: cole as instruções completas do Bella Bot.</p>
+      <p class="p-next">Próximo passo: use essa frase no campo "Solução" do Gerador de Oferta.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 42</div>
+      <h3>Criar um case a partir de um projeto</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Módulo 6</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[DADOS DO PROJETO]</span></div>
+      </div>
+      <div class="p-box"><pre>Com base nestes dados: [DADOS DO PROJETO], monte um case seguindo a estrutura CONTEXTO, PROBLEMA, AGENTE, COMO FUNCIONA, DEMONSTRAÇÃO, POSSÍVEIS APLICAÇÕES. Se não houver cliente real, sinalize como "Projeto Demonstrativo".</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: cole a Ficha do Primeiro Agente preenchida.</p>
+      <p class="p-next">Próximo passo: adicione um print/gif de demonstração real.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 43</div>
+      <h3>Montar o roteiro de uma demonstração</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Módulo 6</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[AGENTE], [PROBLEMA QUE RESOLVE]</span></div>
+      </div>
+      <div class="p-box"><pre>Escreva um roteiro curto (5 falas) demonstrando o agente [AGENTE] resolvendo o problema: [PROBLEMA QUE RESOLVE], seguindo: problema → entrada → agente trabalhando → saída → utilidade.</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: "...Bella Bot... demora de resposta de preço..."</p>
+      <p class="p-next">Próximo passo: grave um print/gif seguindo esse roteiro.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 44</div>
+      <h3>Transformar um recurso técnico em benefício</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Ao escrever qualquer material de venda</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[RECURSO TÉCNICO]</span></div>
+      </div>
+      <div class="p-box"><pre>Transforme este recurso técnico em um benefício que o cliente entenda na prática: [RECURSO TÉCNICO]. Formato: "Isso significa que você..."</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: "...o agente responde em menos de 5 segundos..."</p>
+      <p class="p-next">Próximo passo: use essas frases na Apresentação Comercial.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 45</div>
+      <h3>Estruturar uma apresentação comercial completa</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Módulo 6, antes de uma reunião de venda</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[CASE], [PREÇO]</span></div>
+      </div>
+      <div class="p-box"><pre>Com base neste case: [CASE] e este preço: [PREÇO], monte o texto de 6 slides pra uma apresentação comercial curta e direta.</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: cole o Template de Case preenchido.</p>
+      <p class="p-next">Próximo passo: monte os slides visualmente (Canva, PowerPoint ou Google Slides).</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 46</div>
+      <h3>Escrever a legenda de um post mostrando o agente</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Ao divulgar um case nas redes sociais</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[CASE RESUMIDO]</span></div>
+      </div>
+      <div class="p-box"><pre>Escreva uma legenda curta de Instagram/LinkedIn mostrando este case: [CASE RESUMIDO], com um gancho no início e uma chamada pra ação no fim.</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: cole o resumo do case do Bella Bot.</p>
+      <p class="p-next">Próximo passo: publique junto com o print/gif de demonstração.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 47</div>
+      <h3>Responder objeções comuns sobre preço/valor</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Ao se preparar pra uma negociação</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[OBJEÇÃO], [CASE]</span></div>
+      </div>
+      <div class="p-box"><pre>Um possível cliente disse: "[OBJEÇÃO]". Considerando este case: [CASE], escreva uma resposta que reforça o valor sem ser defensiva.</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: "...está caro, dá pra fazer isso de graça no ChatGPT..."</p>
+      <p class="p-next">Próximo passo: pratique a resposta em voz alta antes da reunião.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 48</div>
+      <h3>Criar um resumo de 1 parágrafo pro portfólio</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Bônus 3 — Portfólio Express</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[CASE COMPLETO]</span></div>
+      </div>
+      <div class="p-box"><pre>Resuma este case completo em um único parágrafo curto e impactante pra usar no meu portfólio: [CASE COMPLETO]</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: cole o Template de Case do Bella Bot preenchido.</p>
+      <p class="p-next">Próximo passo: adicione ao Portfólio Express.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 49</div>
+      <h3>Escrever uma mensagem de prospecção fria</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Pra abordar um possível cliente pela primeira vez</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[TIPO DE NEGÓCIO], [CASE PARECIDO]</span></div>
+      </div>
+      <div class="p-box"><pre>Escreva uma mensagem curta de WhatsApp pra abordar o dono de um [TIPO DE NEGÓCIO] pela primeira vez, mencionando um case parecido: [CASE PARECIDO]. Tom direto, sem parecer spam.</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: "...uma barbearia... mencionando o case do salão..."</p>
+      <p class="p-next">Próximo passo: personalize com o nome do negócio antes de enviar.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 50</div>
+      <h3>Preparar respostas pra dúvidas frequentes sobre o produto</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Antes de divulgar a oferta publicamente</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[SEU AGENTE/OFERTA]</span></div>
+      </div>
+      <div class="p-box"><pre>Liste 5 perguntas que um possível cliente provavelmente teria sobre esta oferta: [SEU AGENTE/OFERTA], com uma resposta curta pra cada.</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: cole o Gerador de Oferta preenchido.</p>
+      <p class="p-next">Próximo passo: tenha essas respostas prontas antes de qualquer reunião.</p>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="cat-nav">
+      <a href="04_adaptacao.html">← Adaptação</a>
+      <a href="index.html">Central de Recursos</a>
+      <a href="06_operacao.html">Operação →</a>
+    </div>
+  </div>
+</section>
+
+<script>
+function copyPrompt(btn) {
+  const text = btn.previousElementSibling.innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    const original = btn.textContent;
+    btn.textContent = "Copiado!";
+    setTimeout(() => (btn.textContent = original), 1500);
+  });
+}
+</script>
+
+</body>
+</html>

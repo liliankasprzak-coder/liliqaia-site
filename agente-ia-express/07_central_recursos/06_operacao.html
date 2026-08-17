@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>06 — Operação | Central de Recursos</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="brand">Agente IA <span>Express</span></div>
+    <a class="back" href="index.html">← Central de Recursos</a>
+  </div>
+</header>
+
+<section class="tpl-abertura" style="padding-top:80px; padding-bottom:50px;">
+  <div class="container">
+    <span class="eyebrow">Categoria 06</span>
+    <h1>Prompts de <span class="hl">Operação</span></h1>
+    <p class="subtitle">Use no dia a dia de manter e entregar projetos com organização.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 51</div>
+      <h3>Criar um briefing de cliente completo</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Primeira conversa com um cliente novo</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[RESPOSTAS DO CLIENTE]</span></div>
+      </div>
+      <div class="p-box"><pre>Organize estas respostas do cliente num briefing estruturado, pronto pra eu usar na hora de montar o agente: [RESPOSTAS DO CLIENTE]</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: cole respostas soltas de um formulário ou conversa.</p>
+      <p class="p-next">Próximo passo: use pra preencher a Ficha do Primeiro Agente do cliente.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 52</div>
+      <h3>Documentar as instruções de um agente</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Depois de finalizar um agente</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[INSTRUÇÕES FINAIS]</span></div>
+      </div>
+      <div class="p-box"><pre>Crie uma versão documentada destas instruções: [INSTRUÇÕES FINAIS], com um resumo no topo explicando o que o agente faz, pra eu consultar rápido no futuro.</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: cole as instruções finais e testadas do Bella Bot.</p>
+      <p class="p-next">Próximo passo: salve no seu local de projetos (Módulo 00).</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 53</div>
+      <h3>Escrever um checklist de entrega personalizado</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Antes de entregar pro cliente</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[ESCOPO DO PROJETO]</span></div>
+      </div>
+      <div class="p-box"><pre>Com base neste escopo: [ESCOPO DO PROJETO], crie um checklist de entrega específico, cobrindo tudo que precisa estar pronto antes de considerar o projeto finalizado.</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: cole o Template de Escopo preenchido.</p>
+      <p class="p-next">Próximo passo: só entregue depois de marcar todos os itens.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 54</div>
+      <h3>Revisar um agente periodicamente</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Revisão mensal de manutenção</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[INSTRUÇÕES ATUAIS], [MUDANÇAS NO NEGÓCIO]</span></div>
+      </div>
+      <div class="p-box"><pre>Estas são as instruções atuais: [INSTRUÇÕES ATUAIS]. O negócio mudou o seguinte: [MUDANÇAS NO NEGÓCIO]. O que precisa ser atualizado?</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: "...preços reajustados, novo profissional contratado..."</p>
+      <p class="p-next">Próximo passo: atualize e rode a Bateria de Testes de novo.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 55</div>
+      <h3>Atualizar a base de conhecimento com informação nova</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Sempre que surgir informação nova</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[CONTEXTO ATUAL], [INFORMAÇÃO NOVA]</span></div>
+      </div>
+      <div class="p-box"><pre>Insira esta informação nova: [INFORMAÇÃO NOVA] dentro deste contexto existente, na categoria certa, sem duplicar nada: [CONTEXTO ATUAL]</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: "...novo serviço de alisamento adicionado ao cardápio..."</p>
+      <p class="p-next">Próximo passo: confirme que a informação antiga não ficou contraditória.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 56</div>
+      <h3>Organizar múltiplos agentes de vários clientes</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Quando já tem 3+ projetos ativos</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[LISTA DE PROJETOS]</span></div>
+      </div>
+      <div class="p-box"><pre>Sugira uma estrutura de pastas/nomenclatura pra organizar estes projetos: [LISTA DE PROJETOS], facilitando achar qualquer um rapidamente.</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: liste nome do cliente + tipo de agente + data de entrega.</p>
+      <p class="p-next">Próximo passo: aplique a estrutura sugerida no seu Drive/Notion.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 57</div>
+      <h3>Escrever instruções de handoff pra outra pessoa assumir</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Ao delegar ou transferir um projeto</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[DETALHES DO PROJETO]</span></div>
+      </div>
+      <div class="p-box"><pre>Escreva um documento de transferência (handoff) explicando este projeto pra outra pessoa assumir sem perder contexto: [DETALHES DO PROJETO]</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: cole o case completo + histórico de ajustes feitos.</p>
+      <p class="p-next">Próximo passo: revise junto com a pessoa antes de transferir de vez.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 58</div>
+      <h3>Criar um registro de mudanças (changelog)</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Toda vez que ajustar um agente já entregue</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[MUDANÇA FEITA], [MOTIVO]</span></div>
+      </div>
+      <div class="p-box"><pre>Escreva uma linha de changelog curta e clara pra esta mudança: [MUDANÇA FEITA], motivo: [MOTIVO]. Formato: data — o que mudou — por quê.</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: "...adicionada regra de não prometer desconto, motivo: cliente reclamou..."</p>
+      <p class="p-next">Próximo passo: acumule essas linhas num histórico por projeto.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 59</div>
+      <h3>Preparar um treinamento rápido pra equipe do cliente</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Na entrega final de um projeto</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[COMO O AGENTE FUNCIONA]</span></div>
+      </div>
+      <div class="p-box"><pre>Com base em como este agente funciona: [COMO O AGENTE FUNCIONA], escreva um guia rápido (5 passos) pra equipe do cliente saber usar e quando assumir a conversa manualmente.</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: cole o resumo do funcionamento do Bella Bot.</p>
+      <p class="p-next">Próximo passo: envie junto com a entrega final.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 60</div>
+      <h3>Auditar se um agente ainda está alinhado com o negócio</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Revisão trimestral ou quando algo parecer errado</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[INSTRUÇÕES ATUAIS], [SITUAÇÃO ATUAL DO NEGÓCIO]</span></div>
+      </div>
+      <div class="p-box"><pre>Compare estas instruções: [INSTRUÇÕES ATUAIS] com a situação atual do negócio: [SITUAÇÃO ATUAL DO NEGÓCIO]. Aponte qualquer desalinhamento encontrado.</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: descreva como o negócio funciona hoje, mesmo que tenha mudado bastante.</p>
+      <p class="p-next">Próximo passo: use os prompts de Adaptação (categoria 04) pra corrigir o que estiver desalinhado.</p>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="page-nav">
+      <a class="prev" href="05_apresentacao.html">← Apresentação</a>
+      <a class="next" href="../08_bonus/index.html">Próximo: Bônus →</a>
+    </div>
+  </div>
+</section>
+
+<script>
+function copyPrompt(btn) {
+  const text = btn.previousElementSibling.innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    const original = btn.textContent;
+    btn.textContent = "Copiado!";
+    setTimeout(() => (btn.textContent = original), 1500);
+  });
+}
+</script>
+
+</body>
+</html>

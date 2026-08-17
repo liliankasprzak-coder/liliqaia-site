@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Módulo 4 — Automação sem Complicação | Agente IA Express</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="brand">Agente IA <span>Express</span></div>
+    <a class="back" href="../index.html">← Sumário do curso</a>
+  </div>
+</header>
+
+<section class="tpl-abertura">
+  <div class="container">
+    <span class="eyebrow">Módulo 4</span>
+    <div class="mod-num">04</div>
+    <h1>Automação sem <span class="hl">Complicação</span></h1>
+    <p class="subtitle">Como transformar uma tarefa isolada em um fluxo que roda sozinho.</p>
+  </div>
+</section>
+
+<section class="tpl-conceito">
+  <div class="container">
+    <span class="eyebrow">Opcional</span>
+    <h2>Roteiro de vídeo deste módulo</h2>
+    <p class="lead">~8 min.</p>
+    <div class="video-script">
+      <div class="vs-bar">🎬 roteiro-modulo-4.txt · ~8 min</div>
+      <div class="vs-body">
+        <span class="cue">Abertura (0:00)</span>
+        <p>"Até agora, você conversou com o agente manualmente — copiando e colando. Automação é o próximo passo: fazer isso acontecer sozinho, sem você precisar abrir nada."</p>
+        <span class="cue">Agente vs. automação (1:30)</span>
+        <p>Explicar a diferença com o exemplo do Bella Bot: hoje ele responde quando você cola a pergunta; automatizado, ele responderia sozinho assim que a mensagem chegasse no WhatsApp real.</p>
+        <span class="cue">Os 4 fluxos (3:30)</span>
+        <p>Passar rápido pelos 4 fluxos prontos, dando um exemplo de negócio pra cada.</p>
+        <span class="cue">A pergunta que evita automação inútil (6:00)</span>
+        <p>"Antes de automatizar qualquer coisa, pergunte: isso realmente precisa rodar sozinho, ou eu só preciso fazer isso mais rápido uma vez por dia?"</p>
+        <span class="cue">Encerramento (7:30)</span>
+        <p>"Preencha o Canvas de Automação Express com o fluxo do seu agente. Não precisa implementar ainda — só desenhar."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tpl-diagrama">
+  <div class="container">
+    <span class="eyebrow">Conceito central</span>
+    <h2>Todo fluxo de automação tem 3 partes</h2>
+    <div class="diagram-flow horizontal">
+      <div class="diagram-step accent">ENTRADA</div>
+      <div class="diagram-arrow">→</div>
+      <div class="diagram-step accent">PROCESSAMENTO</div>
+      <div class="diagram-arrow">→</div>
+      <div class="diagram-step accent">SAÍDA</div>
+    </div>
+  </div>
+</section>
+
+<section class="tpl-conceito">
+  <div class="container">
+    <span class="eyebrow">Vocabulário essencial</span>
+    <h2>Diferença entre agente e automação</h2>
+    <p class="lead">Um <strong style="color:var(--white)">agente</strong> conversa e decide na hora, mas precisa que alguém traga a pergunta até ele (ex: você colando no ChatGPT). Uma <strong style="color:var(--white)">automação</strong> executa um fluxo fixo sempre que algo acontece, sem intervenção manual — a mensagem chega no WhatsApp, o fluxo dispara sozinho, a resposta sai sozinha. Muitas soluções boas usam os dois juntos: a automação cuida do "quando" e do "como conectar", e o agente cuida do "o que responder".</p>
+    <div class="grid-3" style="margin-top:26px;">
+      <div class="card"><h3 style="font-size:0.98rem;margin-bottom:8px;">Gatilho</h3><p style="font-size:0.88rem;">O que inicia o fluxo. Ex: uma mensagem chegando no WhatsApp, alguém preenchendo um formulário, um horário fixo do dia.</p></div>
+      <div class="card"><h3 style="font-size:0.98rem;margin-bottom:8px;">Entrada</h3><p style="font-size:0.88rem;">A informação que chega pro fluxo processar. Ex: o texto da mensagem, os dados do formulário.</p></div>
+      <div class="card"><h3 style="font-size:0.98rem;margin-bottom:8px;">Processamento</h3><p style="font-size:0.88rem;">O que é feito com essa informação — normalmente é aqui que entra o seu agente de IA, pensando a resposta.</p></div>
+      <div class="card"><h3 style="font-size:0.98rem;margin-bottom:8px;">Decisão</h3><p style="font-size:0.88rem;">Pontos onde o fluxo segue por caminhos diferentes. Ex: "se for pergunta de preço, responde direto; se for reclamação, encaminha pra humano."</p></div>
+      <div class="card"><h3 style="font-size:0.98rem;margin-bottom:8px;">Saída</h3><p style="font-size:0.88rem;">O resultado final entregue — a mensagem de resposta, o documento gerado, a planilha atualizada.</p></div>
+      <div class="card"><h3 style="font-size:0.98rem;margin-bottom:8px;">Encaminhamento humano</h3><p style="font-size:0.88rem;">Quando o fluxo para e passa pra uma pessoa — essencial pra casos delicados ou fora do escopo do agente.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="tpl-comparacao">
+  <div class="container">
+    <span class="eyebrow">Regra de ouro</span>
+    <h2>Nem toda tarefa deveria ser automatizada</h2>
+    <p class="lead" style="margin-bottom:10px;">Automatizar tem custo: tempo de configuração, ferramentas extras, e o risco de um erro se repetir sozinho antes de alguém perceber. Só vale a pena quando o volume e a repetição compensam.</p>
+    <div class="compare-grid">
+      <div class="compare-col wrong">
+        <span class="tag">✕ Automatizar sem pensar</span>
+        <ul>
+          <li>"Dá pra automatizar, então vou automatizar"</li>
+          <li>Fluxo complexo pra uma tarefa que acontece raramente (ex: 1x por mês)</li>
+          <li>Ninguém revisa o resultado — erros se propagam sem ninguém notar</li>
+        </ul>
+      </div>
+      <div class="compare-col right">
+        <span class="tag">✓ Pergunta certa</span>
+        <ul>
+          <li>"Isso realmente deveria ser automatizado?"</li>
+          <li>Automatiza o que é repetitivo e de alto volume (várias vezes por dia)</li>
+          <li>Mantém revisão humana onde a decisão é sensível</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tpl-conceito">
+  <div class="container">
+    <span class="eyebrow">Biblioteca de Fluxos</span>
+    <h2>4 fluxos prontos pra adaptar</h2>
+    <div class="grid-2" style="margin-top:26px;">
+      <div class="card">
+        <h3 style="font-size:1rem;margin-bottom:10px;">Fluxo 1 — Consulta</h3>
+        <p style="font-size:0.9rem;">Pergunta → consulta → resposta. Ex: cliente pergunta preço no WhatsApp, o fluxo consulta a tabela e responde na hora. É o fluxo do Bella Bot.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1rem;margin-bottom:10px;">Fluxo 2 — Documento</h3>
+        <p style="font-size:0.9rem;">Briefing → organização → documento. Ex: cliente preenche um formulário de briefing, o fluxo organiza as respostas e gera um documento pronto.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1rem;margin-bottom:10px;">Fluxo 3 — Triagem</h3>
+        <p style="font-size:0.9rem;">Informação → classificação → encaminhamento. Ex: mensagem chega, o fluxo identifica se é dúvida simples (responde) ou reclamação (encaminha pro dono).</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1rem;margin-bottom:10px;">Fluxo 4 — Conteúdo</h3>
+        <p style="font-size:0.9rem;">Tema → processamento → estrutura de conteúdo. Ex: você digita um tema numa planilha, o fluxo gera 3 ideias de post automaticamente.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tpl-worksheet">
+  <div class="container">
+    <span class="eyebrow">Material</span>
+    <h2>Canvas de Automação Express</h2>
+    <div class="worksheet">
+      <div class="worksheet-field"><label>Gatilho (o que inicia o fluxo)</label><input type="text"></div>
+      <div class="worksheet-field"><label>Entrada</label><input type="text"></div>
+      <div class="worksheet-field"><label>Processamento (o que acontece com a informação)</label><textarea rows="2"></textarea></div>
+      <div class="worksheet-field"><label>Decisões (se houver caminhos diferentes)</label><textarea rows="2"></textarea></div>
+      <div class="worksheet-field"><label>Saída</label><input type="text"></div>
+      <div class="worksheet-field"><label>Quando encaminhar pra um humano</label><input type="text"></div>
+    </div>
+
+    <div class="filled-example">
+      <span class="tag">Exemplo preenchido — Bella Bot automatizado</span>
+      <dl>
+        <dt>Gatilho</dt><dd>Mensagem nova chega no WhatsApp do salão</dd>
+        <dt>Entrada</dt><dd>Texto da mensagem do cliente</dd>
+        <dt>Processamento</dt><dd>O agente (Módulo 2) lê a mensagem e consulta a tabela de preços/horários pra formular a resposta</dd>
+        <dt>Decisões</dt><dd>Se for dúvida de preço/horário → responde direto. Se for reclamação ou pedido fora do escopo → encaminha pra recepcionista</dd>
+        <dt>Saída</dt><dd>Resposta automática enviada no próprio WhatsApp</dd>
+        <dt>Encaminhar pra humano</dt><dd>Reclamações, pedidos de desconto, qualquer coisa que o agente não tenha regra clara pra responder</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="tpl-checklist">
+  <div class="container">
+    <span class="eyebrow">Antes de automatizar</span>
+    <h2>Checklist "Automatizar ou Não?"</h2>
+    <ul class="checklist">
+      <li>Essa tarefa se repete com frequência real (não só ocasionalmente)?</li>
+      <li>O processo é claro o suficiente pra descrever passo a passo, sem "depende"?</li>
+      <li>Existe um ponto de revisão humana onde realmente importa (reclamação, valores altos, exceções)?</li>
+      <li>O tempo economizado compensa o tempo de montar e manter o fluxo?</li>
+    </ul>
+  </div>
+</section>
+
+<section class="tpl-checkpoint">
+  <div class="container">
+    <div class="checkpoint-block">
+      <span class="tag">Checkpoint</span>
+      <h3>Antes de ir pro Módulo 5, confirme:</h3>
+      <ul class="checklist" style="text-align:left; max-width:460px; margin-inline:auto;">
+        <li>Sei diferenciar agente de automação</li>
+        <li>Escolhi um dos 4 fluxos e adaptei pro meu contexto</li>
+        <li>Preenchi o Canvas de Automação Express</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="page-nav">
+      <a class="prev" href="../03_agentes_negocios/index.html">← Módulo 3</a>
+      <a class="next" href="../05_oferta/index.html">Próximo: Módulo 5 — Transformando o Agente em Oferta →</a>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

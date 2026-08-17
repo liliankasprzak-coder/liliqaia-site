@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>02 — Construção | Central de Recursos</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="brand">Agente IA <span>Express</span></div>
+    <a class="back" href="index.html">← Central de Recursos</a>
+  </div>
+</header>
+
+<section class="tpl-abertura" style="padding-top:80px; padding-bottom:50px;">
+  <div class="container">
+    <span class="eyebrow">Categoria 02</span>
+    <h1>Prompts de <span class="hl">Construção</span></h1>
+    <p class="subtitle">Use pra escrever cada bloco do Template Mestre de Instruções sem travar na página em branco.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 11</div>
+      <h3>Criar o papel do agente</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Etapa 2 do Módulo 2</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[NEGÓCIO], [FUNÇÃO]</span></div>
+      </div>
+      <div class="p-box"><pre>Escreva uma definição de papel (1-2 frases) para um agente de IA que representa [NEGÓCIO] e exerce a função de [FUNÇÃO]. Seja específico, evite frases genéricas.</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: "...representa o Salão Bella Hair e exerce a função de atendente virtual..."</p>
+      <p class="p-next">Próximo passo: cole a resposta na seção PAPEL do Template Mestre.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 12</div>
+      <h3>Criar o objetivo em uma frase</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Etapa 1 do Módulo 2</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[PROBLEMA], [TAREFA]</span></div>
+      </div>
+      <div class="p-box"><pre>Resuma em uma frase o objetivo de um agente que resolve [PROBLEMA] executando [TAREFA]. Formato: "Este agente existe para ___".</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: "...resolve a demora de resposta executando o envio automático de preços..."</p>
+      <p class="p-next">Próximo passo: cole a resposta na seção OBJETIVO do Template Mestre.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 13</div>
+      <h3>Escrever a seção de instruções completa</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Quando já tem a Ficha do Módulo 1 preenchida</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[FICHA DO PRIMEIRO AGENTE]</span></div>
+      </div>
+      <div class="p-box"><pre>Com base nesta ficha: [FICHA DO PRIMEIRO AGENTE], escreva as instruções completas seguindo a estrutura PAPEL, OBJETIVO, CONTEXTO, TAREFAS, REGRAS, LIMITES, FORMATO DE SAÍDA.</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: cole os 10 campos preenchidos da Ficha do Módulo 1.</p>
+      <p class="p-next">Próximo passo: revise o resultado e ajuste o que soar genérico demais.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 14</div>
+      <h3>Definir regras de comportamento</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Etapa 4 do Módulo 2</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[TIPO DE AGENTE]</span></div>
+      </div>
+      <div class="p-box"><pre>Liste 4-6 regras de comportamento que um agente de [TIPO DE AGENTE] sempre deveria seguir, cobrindo tom, precisão e o que fazer quando não souber algo.</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: "...um agente de pré-atendimento de clínica odontológica..."</p>
+      <p class="p-next">Próximo passo: cole na seção REGRAS do Template Mestre.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 15</div>
+      <h3>Estruturar o contexto a partir de informações soltas</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Etapa 3 do Módulo 2</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[INFORMAÇÕES SOLTAS]</span></div>
+      </div>
+      <div class="p-box"><pre>Organize estas informações soltas em um bloco de CONTEXTO estruturado, por categoria: [INFORMAÇÕES SOLTAS]</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: cole anotações desorganizadas sobre preços, horários e regras.</p>
+      <p class="p-next">Próximo passo: revise se falta alguma informação crítica antes de colar no Template Mestre.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 16</div>
+      <h3>Criar o formato de saída ideal</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Etapa 4 do Módulo 2</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[PÚBLICO], [CANAL]</span></div>
+      </div>
+      <div class="p-box"><pre>Defina o formato ideal de resposta (tamanho, tom, estrutura) para um agente que atende [PÚBLICO] pelo canal [CANAL].</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: "...clientes de um salão de beleza pelo WhatsApp..."</p>
+      <p class="p-next">Próximo passo: cole na seção FORMATO DE SAÍDA do Template Mestre.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 17</div>
+      <h3>Transformar uma FAQ em contexto estruturado</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Quando já existe uma lista de perguntas frequentes</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[LISTA DE FAQ]</span></div>
+      </div>
+      <div class="p-box"><pre>Transforme esta lista de perguntas e respostas em um bloco de contexto pronto pra colar num agente de IA: [LISTA DE FAQ]</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: cole uma FAQ que já existe no site ou WhatsApp Business do negócio.</p>
+      <p class="p-next">Próximo passo: adicione ao CONTEXTO do Template Mestre.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 18</div>
+      <h3>Escrever limites — o que o agente nunca deve fazer</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Etapa 4 do Módulo 2</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[TIPO DE AGENTE], [RISCOS]</span></div>
+      </div>
+      <div class="p-box"><pre>Liste 3-5 limites claros para um agente de [TIPO DE AGENTE], considerando estes riscos possíveis: [RISCOS]. Inclua o que fazer quando o limite for atingido.</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: "...um agente comercial... riscos: prometer desconto que não existe."</p>
+      <p class="p-next">Próximo passo: cole na seção LIMITES do Template Mestre.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 19</div>
+      <h3>Criar uma versão resumida do Template Mestre</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Pra agentes bem simples, com pouco contexto</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[INSTRUÇÕES COMPLETAS]</span></div>
+      </div>
+      <div class="p-box"><pre>Resuma estas instruções completas numa versão mais enxuta, mantendo papel, objetivo, regra principal e formato de saída: [INSTRUÇÕES COMPLETAS]</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: cole as instruções completas do Bella Bot.</p>
+      <p class="p-next">Próximo passo: teste se a versão curta ainda passa na Bateria de Testes.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 20</div>
+      <h3>Revisar e simplificar instruções muito longas</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Quando o agente está confuso ou contraditório</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[INSTRUÇÕES ATUAIS]</span></div>
+      </div>
+      <div class="p-box"><pre>Revise estas instruções e aponte qualquer contradição, repetição ou ambiguidade: [INSTRUÇÕES ATUAIS]. Sugira uma versão mais clara.</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: cole instruções que já cresceram demais depois de vários ajustes.</p>
+      <p class="p-next">Próximo passo: aplique as sugestões e rode a Bateria de Testes de novo.</p>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="cat-nav">
+      <a href="01_diagnostico.html">← Diagnóstico</a>
+      <a href="index.html">Central de Recursos</a>
+      <a href="03_teste.html">Teste →</a>
+    </div>
+  </div>
+</section>
+
+<script>
+function copyPrompt(btn) {
+  const text = btn.previousElementSibling.innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    const original = btn.textContent;
+    btn.textContent = "Copiado!";
+    setTimeout(() => (btn.textContent = original), 1500);
+  });
+}
+</script>
+
+</body>
+</html>

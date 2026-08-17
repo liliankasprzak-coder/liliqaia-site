@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>01 — Diagnóstico | Central de Recursos</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="brand">Agente IA <span>Express</span></div>
+    <a class="back" href="index.html">← Central de Recursos</a>
+  </div>
+</header>
+
+<section class="tpl-abertura" style="padding-top:80px; padding-bottom:50px;">
+  <div class="container">
+    <span class="eyebrow">Categoria 01</span>
+    <h1>Prompts de <span class="hl">Diagnóstico</span></h1>
+    <p class="subtitle">Use antes de construir qualquer coisa — pra ter certeza que está resolvendo um problema real.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 01</div>
+      <h3>Analisar uma tarefa repetitiva</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>No início do Módulo 1, com uma tarefa em mente</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[TAREFA], [NEGÓCIO]</span></div>
+      </div>
+      <div class="p-box"><pre>Analise esta tarefa: [TAREFA], feita no negócio [NEGÓCIO]. Ela é repetitiva, demorada, baseada em informação e tem resultado claro? Responda cada critério com sim/não e uma justificativa curta.</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: "Analise esta tarefa: responder preço de corte de cabelo, feita no Salão Bella Hair..."</p>
+      <p class="p-next">Próximo passo: se passou nos 4 critérios, preencha o Mapa de Oportunidades (Módulo 1).</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 02</div>
+      <h3>Identificar o problema real por trás de uma reclamação</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Quando alguém reclama de algo, mas a causa não está clara</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[RECLAMAÇÃO]</span></div>
+      </div>
+      <div class="p-box"><pre>Esta é uma reclamação recorrente: "[RECLAMAÇÃO]". Me ajude a identificar: qual é o problema raiz por trás disso? Que tarefa, se automatizada ou melhor organizada, reduziria essa reclamação?</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: "...'demoro muito pra saber se meu pedido foi confirmado'..."</p>
+      <p class="p-next">Próximo passo: transforme a resposta numa linha do Mapa de Oportunidades.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 03</div>
+      <h3>Mapear um processo passo a passo</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Antes de automatizar (Módulo 4)</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[PROCESSO]</span></div>
+      </div>
+      <div class="p-box"><pre>Descreva o processo de [PROCESSO] em etapas numeradas, do início ao fim. Depois, marque quais etapas são manuais e repetitivas, e quais exigem decisão humana sensível.</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: "...atendimento de um pedido novo, do primeiro contato até a entrega..."</p>
+      <p class="p-next">Próximo passo: use as etapas manuais/repetitivas pra preencher o Canvas de Automação Express.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 04</div>
+      <h3>Entender o público/avatar de um negócio</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Antes de definir o CONTEXTO do agente</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[NEGÓCIO]</span></div>
+      </div>
+      <div class="p-box"><pre>Descreva o público típico de [NEGÓCIO]: o que essas pessoas mais perguntam, o que mais valorizam, e em que momento do dia costumam entrar em contato.</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: "Descreva o público típico de uma barbearia de bairro..."</p>
+      <p class="p-next">Próximo passo: use isso pra escrever o tom de voz na seção FORMATO DE SAÍDA do Template Mestre.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 05</div>
+      <h3>Identificar padrões de repetição em mensagens</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Quando você já tem várias conversas antigas pra analisar</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[LISTA DE MENSAGENS]</span></div>
+      </div>
+      <div class="p-box"><pre>Aqui estão mensagens reais recebidas: [LISTA DE MENSAGENS]. Agrupe elas por tema e me diga quais 3-5 temas aparecem com mais frequência.</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: cole 20-30 mensagens de WhatsApp recebidas no último mês.</p>
+      <p class="p-next">Próximo passo: os temas mais frequentes viram a base do FAQ do seu agente.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 06</div>
+      <h3>Encontrar oportunidades de automação num negócio</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Quando está sem ideia nenhuma de por onde começar</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[TIPO DE NEGÓCIO]</span></div>
+      </div>
+      <div class="p-box"><pre>Liste 5 tarefas comuns num negócio do tipo [TIPO DE NEGÓCIO] que costumam ser repetitivas e baseadas em informação — boas candidatas a um primeiro agente de IA.</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: "...num consultório de fisioterapia..."</p>
+      <p class="p-next">Próximo passo: escolha uma das 5 e aplique o Filtro P.A.F.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 07</div>
+      <h3>Avaliar se uma tarefa é boa candidata a agente</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Pra confirmar uma escolha antes de investir tempo</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[TAREFA]</span></div>
+      </div>
+      <div class="p-box"><pre>Avalie [TAREFA] usando o Filtro P.A.F.: Problema (0-3), Acesso (0-3), Facilidade (0-3). Dê uma nota pra cada e justifique.</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: "Avalie 'responder dúvidas sobre plano de saúde aceito'..."</p>
+      <p class="p-next">Próximo passo: se a nota total for 6 ou mais, siga pro Módulo 2.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 08</div>
+      <h3>Extrair perguntas frequentes de um histórico</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Ao montar a base de conhecimento (Módulo 2)</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[HISTÓRICO DE CONVERSAS]</span></div>
+      </div>
+      <div class="p-box"><pre>A partir deste histórico de conversas: [HISTÓRICO DE CONVERSAS], monte uma lista de perguntas frequentes (FAQ) com a resposta ideal pra cada uma.</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: cole prints ou texto de conversas reais de atendimento.</p>
+      <p class="p-next">Próximo passo: cole essa lista direto na seção CONTEXTO do Template Mestre.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 09</div>
+      <h3>Mapear os 4 territórios de um negócio específico</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Pra ver todas as oportunidades de uma vez</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[NEGÓCIO]</span></div>
+      </div>
+      <div class="p-box"><pre>Para o negócio [NEGÓCIO], liste 1-2 oportunidades de agente de IA em cada um destes territórios: Atendimento, Conteúdo, Organização, Apoio Comercial.</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: "...para uma loja de roupas infantis..."</p>
+      <p class="p-next">Próximo passo: escolha a oportunidade com maior pontuação no Filtro P.A.F.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 10</div>
+      <h3>Priorizar entre várias oportunidades mapeadas</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Quando tem mais de 3 ideias e não sabe por qual começar</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[LISTA DE OPORTUNIDADES]</span></div>
+      </div>
+      <div class="p-box"><pre>Aqui estão as oportunidades mapeadas: [LISTA DE OPORTUNIDADES]. Aplique o Filtro P.A.F. em cada uma e me diga qual tem a maior pontuação total, com justificativa.</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: liste as 3-5 linhas que você preencheu no Mapa de Oportunidades.</p>
+      <p class="p-next">Próximo passo: preencha a Ficha do Primeiro Agente com a escolhida.</p>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="cat-nav">
+      <a href="index.html">← Central de Recursos</a>
+      <a href="02_construcao.html">Construção →</a>
+    </div>
+  </div>
+</section>
+
+<script>
+function copyPrompt(btn) {
+  const text = btn.previousElementSibling.innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    const original = btn.textContent;
+    btn.textContent = "Copiado!";
+    setTimeout(() => (btn.textContent = original), 1500);
+  });
+}
+</script>
+
+</body>
+</html>

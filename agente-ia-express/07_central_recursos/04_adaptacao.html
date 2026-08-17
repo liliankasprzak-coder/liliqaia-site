@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>04 — Adaptação | Central de Recursos</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="brand">Agente IA <span>Express</span></div>
+    <a class="back" href="index.html">← Central de Recursos</a>
+  </div>
+</header>
+
+<section class="tpl-abertura" style="padding-top:80px; padding-bottom:50px;">
+  <div class="container">
+    <span class="eyebrow">Categoria 04</span>
+    <h1>Prompts de <span class="hl">Adaptação</span></h1>
+    <p class="subtitle">Use pra reaproveitar um agente pronto em vez de começar do zero a cada cliente novo.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 31</div>
+      <h3>Adaptar um agente pra outro nicho</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Módulo 3, ao mudar de nicho</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[INSTRUÇÕES ATUAIS], [NOVO NICHO]</span></div>
+      </div>
+      <div class="p-box"><pre>Adapte estas instruções: [INSTRUÇÕES ATUAIS] para funcionar no nicho de [NOVO NICHO], mantendo a mesma estrutura e mudando só o que for específico do negócio.</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: "...do Bella Bot (salão) para uma barbearia..."</p>
+      <p class="p-next">Próximo passo: rode a Bateria de Testes na versão adaptada.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 32</div>
+      <h3>Adaptar a linguagem/tom pra um público diferente</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Quando o público muda de perfil</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[TEXTO ATUAL], [NOVO PÚBLICO]</span></div>
+      </div>
+      <div class="p-box"><pre>Reescreva este texto de resposta: [TEXTO ATUAL] com um tom adequado para [NOVO PÚBLICO], mantendo a mesma informação.</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: "...de um tom descontraído pra um tom mais formal, público: advogados..."</p>
+      <p class="p-next">Próximo passo: atualize a seção FORMATO DE SAÍDA com o novo tom.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 33</div>
+      <h3>Adaptar o contexto mantendo a mesma estrutura</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Ao reaproveitar um agente pra cliente novo</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[CONTEXTO ANTIGO], [INFORMAÇÕES NOVAS]</span></div>
+      </div>
+      <div class="p-box"><pre>Este era o contexto de um agente: [CONTEXTO ANTIGO]. Substitua pelas informações do novo negócio: [INFORMAÇÕES NOVAS], mantendo a mesma organização por categorias.</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: troque preços/horários do salão pelos de uma nova barbearia.</p>
+      <p class="p-next">Próximo passo: confira se sobrou alguma informação antiga por engano.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 34</div>
+      <h3>Adaptar a tarefa principal do agente</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Ao mudar de projeto (ex: A para B, Módulo 3)</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[AGENTE ATUAL], [NOVA TAREFA]</span></div>
+      </div>
+      <div class="p-box"><pre>Este agente hoje faz: [AGENTE ATUAL]. Adapte as instruções pra que a tarefa principal passe a ser: [NOVA TAREFA]. O que precisa mudar em CONTEXTO e REGRAS?</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: "...de responder FAQ para gerar ideias de conteúdo..."</p>
+      <p class="p-next">Próximo passo: teste se a mudança de tarefa não quebrou nenhuma regra antiga.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 35</div>
+      <h3>Traduzir jargão técnico pra linguagem simples</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Negócios técnicos (jurídico, saúde, TI)</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[TEXTO TÉCNICO]</span></div>
+      </div>
+      <div class="p-box"><pre>Reescreva este texto técnico numa linguagem simples, que qualquer cliente leigo entenda: [TEXTO TÉCNICO]</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: cole um procedimento jurídico ou médico cheio de termos técnicos.</p>
+      <p class="p-next">Próximo passo: use a versão simples no CONTEXTO do agente educativo.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 36</div>
+      <h3>Adaptar um agente de atendimento pra virar comercial</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Ao evoluir de Projeto A pra Projeto D (Módulo 3)</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[AGENTE DE ATENDIMENTO]</span></div>
+      </div>
+      <div class="p-box"><pre>Este é um agente de atendimento: [AGENTE DE ATENDIMENTO]. Adapte pra que ele também colete informações de venda e monte um briefing comercial pro time humano.</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: cole as instruções do Bella Bot.</p>
+      <p class="p-next">Próximo passo: adicione a nova TAREFA sem remover a função original.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 37</div>
+      <h3>Adaptar regras sazonais (ex: feriado, promoção)</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Datas especiais, mudanças temporárias</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[REGRAS ATUAIS], [SITUAÇÃO SAZONAL]</span></div>
+      </div>
+      <div class="p-box"><pre>Considerando a situação sazonal: [SITUAÇÃO SAZONAL], quais ajustes temporários eu deveria fazer nestas regras? [REGRAS ATUAIS]</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: "...feriado prolongado, salão fechado por 3 dias..."</p>
+      <p class="p-next">Próximo passo: lembre de reverter a mudança depois que a situação passar.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 38</div>
+      <h3>Adaptar pra regionalismos e gírias locais</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Negócios muito regionais/locais</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[TEXTO ATUAL], [REGIÃO]</span></div>
+      </div>
+      <div class="p-box"><pre>Ajuste este texto pra soar natural pra um público de [REGIÃO], sem exagerar em gírias: [TEXTO ATUAL]</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: "...interior de Minas Gerais..."</p>
+      <p class="p-next">Próximo passo: teste com alguém da região se soou natural ou forçado.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 39</div>
+      <h3>Adaptar um agente pronto pra um cliente novo (branding)</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Ao reaproveitar um dos 10 Agentes Iniciais</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[AGENTE MODELO], [DADOS DO CLIENTE]</span></div>
+      </div>
+      <div class="p-box"><pre>Use este agente como modelo: [AGENTE MODELO]. Adapte com os dados do novo cliente: [DADOS DO CLIENTE], incluindo nome do negócio em todas as menções.</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: use o Agente de FAQ da Biblioteca (Bônus 1) como base.</p>
+      <p class="p-next">Próximo passo: confira se não sobrou nenhuma menção ao negócio antigo.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 40</div>
+      <h3>Identificar o que NÃO deve mudar ao adaptar</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Antes de qualquer adaptação grande</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[INSTRUÇÕES ATUAIS]</span></div>
+      </div>
+      <div class="p-box"><pre>Nestas instruções: [INSTRUÇÕES ATUAIS], marque quais partes são específicas de UM negócio (mudam sempre) e quais são estruturais (não deveriam mudar ao adaptar pra outro cliente).</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: cole as instruções completas de qualquer agente já pronto.</p>
+      <p class="p-next">Próximo passo: use essa divisão pra criar seu próprio template reutilizável.</p>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="cat-nav">
+      <a href="03_teste.html">← Teste</a>
+      <a href="index.html">Central de Recursos</a>
+      <a href="05_apresentacao.html">Apresentação →</a>
+    </div>
+  </div>
+</section>
+
+<script>
+function copyPrompt(btn) {
+  const text = btn.previousElementSibling.innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    const original = btn.textContent;
+    btn.textContent = "Copiado!";
+    setTimeout(() => (btn.textContent = original), 1500);
+  });
+}
+</script>
+
+</body>
+</html>

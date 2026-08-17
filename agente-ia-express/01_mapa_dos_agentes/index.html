@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Módulo 1 — Mapa dos Agentes | Agente IA Express</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="brand">Agente IA <span>Express</span></div>
+    <a class="back" href="../index.html">← Sumário do curso</a>
+  </div>
+</header>
+
+<section class="tpl-abertura">
+  <div class="container">
+    <span class="eyebrow">Módulo 1</span>
+    <div class="mod-num">01</div>
+    <h1>Mapa dos <span class="hl">Agentes</span></h1>
+    <p class="subtitle">Encontre uma oportunidade real e defina o primeiro agente que você vai construir. Ao final, você completa: "Vou criar um agente de [tipo] para [público] que ajuda a [resultado]."</p>
+  </div>
+</section>
+
+<!-- ROTEIRO DE VÍDEO -->
+<section class="tpl-conceito">
+  <div class="container">
+    <span class="eyebrow">Opcional</span>
+    <h2>Roteiro de vídeo deste módulo</h2>
+    <p class="lead">Se você quiser gravar uma aula em vídeo pra acompanhar este módulo (não é obrigatório — o material escrito funciona sozinho), use este roteiro como base. Cerca de 6-8 minutos.</p>
+    <div class="video-script">
+      <div class="vs-bar">🎬 roteiro-modulo-1.txt · ~7 min</div>
+      <div class="vs-body">
+        <span class="cue">Abertura (0:00)</span>
+        <p>"Antes de você abrir qualquer ferramenta de IA, eu preciso te tirar de um erro muito comum: achar que o primeiro passo é escolher o ChatGPT, o Gemini ou o Claude. Não é. O primeiro passo é achar o problema certo. É isso que a gente vai fazer nos próximos minutos."</p>
+        <span class="cue">Filtro de tarefas (1:00)</span>
+        <p>Explicar as 4 características de uma boa tarefa pra automatizar: repetitiva, demorada, baseada em informação, resultado claro. Dar 2 exemplos rápidos do dia a dia (ex: responder preço no WhatsApp vs. decidir o cardápio da semana — o segundo não serve).</p>
+        <span class="cue">Fórmula P+T+C (3:00)</span>
+        <p>Mostrar na tela o diagrama Problema + Tarefa + Contexto = Agente. Usar o exemplo do Salão Bella Hair (abaixo, no material escrito) pra ilustrar ao vivo.</p>
+        <span class="cue">Filtro P.A.F. (5:00)</span>
+        <p>Explicar rapidamente os 3 critérios e mostrar uma pontuação sendo feita na tela, com o exemplo preenchido.</p>
+        <span class="cue">Encerramento (6:30)</span>
+        <p>"Sua tarefa agora é preencher o Mapa de Oportunidades com pelo menos 3 ideias suas. Não pule essa parte — é ela que evita que você construa um agente que ninguém precisa."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ETAPA 1 -->
+<section class="tpl-conceito">
+  <div class="container">
+    <span class="eyebrow">Etapa 1 — Problemas antes da IA</span>
+    <h2>Você não começa escolhendo uma ferramenta.</h2>
+    <p class="lead">É tentador abrir o ChatGPT ou o Gemini primeiro e ficar testando prompts até "algo dar certo". Esse caminho quase sempre termina num agente bonito, mas que ninguém usa — porque ele resolve um problema que não existia de verdade. O caminho certo é o oposto: primeiro você encontra o problema, depois escolhe a ferramenta.</p>
+  </div>
+  <div class="container" style="margin-top:24px;">
+    <p class="lead">Nem todo problema vale a pena virar um agente. Use este filtro de 4 perguntas antes de seguir:</p>
+    <div class="grid-2" style="margin-top:20px;">
+      <div class="card"><h3 style="font-size:0.98rem;margin-bottom:8px;">🔁 É repetitiva?</h3><p style="font-size:0.9rem;">Acontece várias vezes, não é uma exceção rara.</p></div>
+      <div class="card"><h3 style="font-size:0.98rem;margin-bottom:8px;">⏱️ É demorada?</h3><p style="font-size:0.9rem;">Consome tempo que poderia ser usado em outra coisa.</p></div>
+      <div class="card"><h3 style="font-size:0.98rem;margin-bottom:8px;">📄 É baseada em informação?</h3><p style="font-size:0.9rem;">Depende de responder, organizar ou consultar dados — não de criatividade pura ou decisão humana delicada.</p></div>
+      <div class="card"><h3 style="font-size:0.98rem;margin-bottom:8px;">🎯 Tem resultado claro?</h3><p style="font-size:0.9rem;">Dá pra saber se a resposta do agente foi boa ou ruim.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="tpl-worksheet">
+  <div class="container">
+    <span class="eyebrow">Material</span>
+    <h2>Mapa de Oportunidades</h2>
+    <p>Preencha ao menos 3 linhas antes de avançar — quanto mais problemas você mapear, melhor a escolha do primeiro.</p>
+    <div class="worksheet">
+      <div class="worksheet-field">
+        <label>Negócio</label>
+        <input type="text" placeholder="Ex: salão de beleza da Ana">
+      </div>
+      <div class="worksheet-field">
+        <label>Tarefa repetitiva observada</label>
+        <input type="text" placeholder="Ex: responder sobre valores de procedimentos">
+      </div>
+      <div class="worksheet-field">
+        <label>Problema real que isso causa</label>
+        <textarea rows="2" placeholder="Ex: perde tempo do dia todo respondendo a mesma coisa"></textarea>
+      </div>
+      <div class="worksheet-field">
+        <label>Frequência (diária, semanal...)</label>
+        <input type="text" placeholder="Ex: várias vezes por dia">
+      </div>
+      <div class="worksheet-field">
+        <label>Isso parece resolvível com um agente de IA?</label>
+        <input type="text" placeholder="Sim / Não / Talvez — por quê?">
+      </div>
+    </div>
+
+    <div class="filled-example">
+      <span class="tag">Exemplo preenchido — Salão Bella Hair</span>
+      <dl>
+        <dt>Negócio</dt><dd>Bella Hair, salão de beleza de bairro, 3 profissionais</dd>
+        <dt>Tarefa repetitiva observada</dt><dd>Responder no WhatsApp perguntas sobre preço de corte, escova e coloração</dd>
+        <dt>Problema real que isso causa</dt><dd>A recepcionista para o atendimento presencial pra responder o celular, e às vezes esquece de responder até o fim do dia — perdendo cliente</dd>
+        <dt>Frequência</dt><dd>Em média 15-20 mensagens por dia só sobre preço e horário</dd>
+        <dt>Isso parece resolvível com IA?</dt><dd>Sim — é uma informação fixa (tabela de preços) que se repete todo dia, com resultado fácil de avaliar (cliente recebeu o preço certo ou não)</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ETAPA 2 -->
+<section class="tpl-diagrama">
+  <div class="container">
+    <span class="eyebrow">Etapa 2 — Fórmula do Agente</span>
+    <h2>Todo agente nasce da mesma equação</h2>
+    <p class="lead" style="margin-bottom:20px;">Qualquer agente — simples ou complexo — pode ser descrito com três peças. Se você não consegue preencher as três com clareza, ainda não está pronto pra construir.</p>
+    <div class="diagram-flow horizontal">
+      <div class="diagram-step accent">P<br><small style="font-weight:400;color:var(--gray)">Problema</small></div>
+      <div class="diagram-arrow">+</div>
+      <div class="diagram-step accent">T<br><small style="font-weight:400;color:var(--gray)">Tarefa</small></div>
+      <div class="diagram-arrow">+</div>
+      <div class="diagram-step accent">C<br><small style="font-weight:400;color:var(--gray)">Contexto</small></div>
+      <div class="diagram-arrow">→</div>
+      <div class="diagram-step" style="border-color:var(--green); box-shadow:0 0 24px rgba(183,255,0,0.15);">AGENTE</div>
+    </div>
+    <div class="grid-3" style="margin-top:32px;">
+      <div class="card">
+        <h3 style="font-size:1rem;margin-bottom:8px;">P — Problema</h3>
+        <p style="font-size:0.9rem;">O que precisa ser resolvido? No exemplo do salão: "clientes esperando demais por uma resposta de preço."</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1rem;margin-bottom:8px;">T — Tarefa</h3>
+        <p style="font-size:0.9rem;">O que o agente vai executar? "Responder perguntas sobre preços e horários automaticamente."</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1rem;margin-bottom:8px;">C — Contexto</h3>
+        <p style="font-size:0.9rem;">O que ele precisa saber? "Tabela de preços atualizada, horário de funcionamento, quem faz cada serviço."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ETAPA 3 -->
+<section class="tpl-conceito">
+  <div class="container">
+    <span class="eyebrow">Etapa 3 — 4 Territórios</span>
+    <h2>Todo bom primeiro agente mora em um destes territórios</h2>
+    <p class="lead">Se você está perdida sem saber por onde começar, mapeie o problema num destes quatro grupos. Eles cobrem a grande maioria das necessidades reais de pequenos negócios.</p>
+    <div class="grid-2" style="margin-top:26px;">
+      <div class="card">
+        <h3 style="font-size:1.05rem;margin-bottom:10px;">💬 Atendimento</h3>
+        <p style="font-size:0.92rem;">FAQ, pré-atendimento, consulta de catálogo. Exemplos: responder dúvidas sobre produtos, verificar disponibilidade de horário, explicar formas de pagamento.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;margin-bottom:10px;">✍️ Conteúdo</h3>
+        <p style="font-size:0.92rem;">Ideias, briefing, planejamento editorial. Exemplos: gerar pauta de posts da semana, transformar um tema solto em roteiro, sugerir legendas.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;margin-bottom:10px;">🗂️ Organização</h3>
+        <p style="font-size:0.92rem;">Documentos, procedimentos, resumo de informações. Exemplos: resumir um contrato, organizar recibos por categoria, explicar um processo interno passo a passo.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.05rem;margin-bottom:10px;">📈 Apoio Comercial</h3>
+        <p style="font-size:0.92rem;">Briefing comercial, consulta de produtos, preparação de informações. Exemplos: montar um resumo do cliente antes de uma reunião, comparar planos/produtos, preparar uma proposta rascunho.</p>
+      </div>
+    </div>
+    <p class="lead" style="margin-top:22px;">No exemplo do Salão Bella Hair, o problema mapeado se encaixa em <strong style="color:var(--white)">Atendimento</strong> — é uma dúvida recorrente de cliente, respondida com informação fixa.</p>
+  </div>
+</section>
+
+<!-- ETAPA 4 -->
+<section class="tpl-worksheet">
+  <div class="container">
+    <span class="eyebrow">Etapa 4 — Filtro P.A.F.</span>
+    <h2>Avalie cada ideia antes de escolher</h2>
+    <p class="lead" style="margin-bottom:20px;">Se você mapeou mais de uma oportunidade, use este filtro pra decidir por qual começar. Dê uma nota de 0 a 3 pra cada critério — pontuação máxima 9. Comece pela ideia com nota mais alta.</p>
+    <div class="grid-3" style="margin-bottom:24px;">
+      <div class="card"><h3 style="font-size:0.95rem;margin-bottom:6px;">P — Problema</h3><p style="font-size:0.86rem;">0 = você acha que existe, mas não confirmou. 3 = você já ouviu reclamação direta sobre isso.</p></div>
+      <div class="card"><h3 style="font-size:0.95rem;margin-bottom:6px;">A — Acesso</h3><p style="font-size:0.86rem;">0 = não sabe onde encontrar esse público. 3 = já tem contato direto com quem sofre esse problema.</p></div>
+      <div class="card"><h3 style="font-size:0.95rem;margin-bottom:6px;">F — Facilidade</h3><p style="font-size:0.86rem;">0 = precisa integrar vários sistemas complexos. 3 = dá pra demonstrar em uma conversa de texto simples.</p></div>
+    </div>
+    <div class="worksheet">
+      <div class="worksheet-field">
+        <label>P — Problema: esse problema realmente acontece? (0-3)</label>
+        <input type="text" placeholder="0, 1, 2 ou 3">
+      </div>
+      <div class="worksheet-field">
+        <label>A — Acesso: é possível encontrar esse público? (0-3)</label>
+        <input type="text" placeholder="0, 1, 2 ou 3">
+      </div>
+      <div class="worksheet-field">
+        <label>F — Facilidade: dá pra criar uma demonstração inicial sem estrutura complexa? (0-3)</label>
+        <input type="text" placeholder="0, 1, 2 ou 3">
+      </div>
+    </div>
+
+    <div class="filled-example">
+      <span class="tag">Exemplo preenchido — Salão Bella Hair</span>
+      <dl>
+        <dt>P — Problema</dt><dd>3 — a recepcionista relatou diretamente esse incômodo</dd>
+        <dt>A — Acesso</dt><dd>3 — é o próprio salão da família, acesso total</dd>
+        <dt>F — Facilidade</dt><dd>3 — só precisa de uma tabela de preços e horários, sem sistema externo</dd>
+        <dt>Total</dt><dd>9/9 — prioridade máxima, comece por aqui</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ETAPA 5 -->
+<section class="tpl-conceito">
+  <div class="container">
+    <span class="eyebrow">Etapa 5 — 10 Agentes Iniciais</span>
+    <h2>Se ainda não tem uma ideia clara, comece por aqui</h2>
+    <p class="lead" style="margin-bottom:20px;">Estes dez modelos cobrem os casos mais comuns em pequenos negócios. Cada um pode ser adaptado pra dezenas de nichos diferentes — vamos ver isso com mais profundidade no Módulo 3.</p>
+    <div class="grid-2">
+      <div class="card">
+        <h3 style="font-size:1rem;margin-bottom:8px;">1. Agente de FAQ</h3>
+        <p style="font-size:0.9rem;">Responde as perguntas mais frequentes automaticamente (preço, horário, localização, formas de pagamento). É normalmente o primeiro agente de qualquer negócio que atende por WhatsApp.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1rem;margin-bottom:8px;">2. Agente de pré-atendimento</h3>
+        <p style="font-size:0.9rem;">Qualifica quem chega antes de passar pra um humano — pergunta o que a pessoa precisa e já direciona pro setor certo.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1rem;margin-bottom:8px;">3. Agente de catálogo</h3>
+        <p style="font-size:0.9rem;">Apresenta produtos/serviços e responde dúvidas específicas sobre cada item (tamanho, cor, prazo, disponibilidade).</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1rem;margin-bottom:8px;">4. Agente de briefing</h3>
+        <p style="font-size:0.9rem;">Coleta as informações certas antes de iniciar um trabalho — evita ida e volta desnecessária com o cliente.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1rem;margin-bottom:8px;">5. Agente de conteúdo</h3>
+        <p style="font-size:0.9rem;">Gera ideias e estruturas a partir de um tema — útil pra quem precisa postar com frequência e sente o bloqueio criativo.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1rem;margin-bottom:8px;">6. Agente editorial</h3>
+        <p style="font-size:0.9rem;">Organiza pauta e planejamento de publicações ao longo do mês, evitando repetição de temas.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1rem;margin-bottom:8px;">7. Agente de documentos</h3>
+        <p style="font-size:0.9rem;">Organiza e resume informações de arquivos — contratos, planilhas, relatórios longos.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1rem;margin-bottom:8px;">8. Agente de procedimentos</h3>
+        <p style="font-size:0.9rem;">Explica passo a passo processos internos — útil pra treinar equipe nova sem repetir a mesma explicação.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1rem;margin-bottom:8px;">9. Agente de preparação comercial</h3>
+        <p style="font-size:0.9rem;">Organiza informações antes de uma venda — resume o histórico do cliente e sugere argumentos.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1rem;margin-bottom:8px;">10. Agente educativo</h3>
+        <p style="font-size:0.9rem;">Explica conceitos e tira dúvidas de forma didática — útil pra negócios que vendem algo técnico ou pouco conhecido.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ETAPA 6 -->
+<section class="tpl-worksheet">
+  <div class="container">
+    <span class="eyebrow">Etapa 6 — Ficha do Primeiro Agente</span>
+    <h2>Feche sua escolha</h2>
+    <div class="worksheet">
+      <div class="worksheet-field"><label>Nome provisório</label><input type="text"></div>
+      <div class="worksheet-field"><label>Público</label><input type="text"></div>
+      <div class="worksheet-field"><label>Problema</label><textarea rows="2"></textarea></div>
+      <div class="worksheet-field"><label>Tarefa</label><textarea rows="2"></textarea></div>
+      <div class="worksheet-field"><label>Conhecimento necessário</label><textarea rows="2"></textarea></div>
+      <div class="worksheet-field"><label>Regras</label><textarea rows="2"></textarea></div>
+      <div class="worksheet-field"><label>Limitações</label><textarea rows="2"></textarea></div>
+      <div class="worksheet-field"><label>Entrada (o que a pessoa vai perguntar/enviar)</label><input type="text"></div>
+      <div class="worksheet-field"><label>Saída (o que o agente vai responder/entregar)</label><input type="text"></div>
+      <div class="worksheet-field"><label>Como você vai demonstrar esse agente funcionando</label><textarea rows="2"></textarea></div>
+    </div>
+
+    <div class="filled-example">
+      <span class="tag">Exemplo preenchido — Salão Bella Hair</span>
+      <dl>
+        <dt>Nome provisório</dt><dd>Bella Bot — Atendimento</dd>
+        <dt>Público</dt><dd>Clientes do Salão Bella Hair que mandam mensagem no WhatsApp</dd>
+        <dt>Problema</dt><dd>Recepcionista sobrecarregada respondendo as mesmas perguntas de preço e horário</dd>
+        <dt>Tarefa</dt><dd>Responder automaticamente sobre preços, horário de funcionamento e quem faz cada serviço</dd>
+        <dt>Conhecimento necessário</dt><dd>Tabela de preços atualizada, horário de funcionamento, especialidades de cada profissional</dd>
+        <dt>Regras</dt><dd>Sempre confirmar o serviço antes de dar o preço; nunca prometer horário sem checar agenda</dd>
+        <dt>Limitações</dt><dd>Não marca horário sozinho ainda (isso vai virar automação no Módulo 4); não fala de assuntos fora do salão</dd>
+        <dt>Entrada</dt><dd>Mensagens de texto no WhatsApp, tipo "quanto custa escova?"</dd>
+        <dt>Saída</dt><dd>Resposta curta com o valor e uma pergunta de follow-up ("quer que eu confira um horário disponível?")</dd>
+        <dt>Demonstração</dt><dd>Print de uma conversa real simulada mostrando pergunta → resposta em segundos</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="tpl-checkpoint">
+  <div class="container">
+    <div class="checkpoint-block">
+      <span class="tag">Checklist de aprovação</span>
+      <h3>Antes de ir pro Módulo 2, confirme:</h3>
+      <ul class="checklist" style="text-align:left; max-width:460px; margin-inline:auto;">
+        <li>Mapeei pelo menos 3 oportunidades reais</li>
+        <li>Apliquei o Filtro P.A.F. e escolhi a de maior pontuação</li>
+        <li>Preenchi a Ficha do Primeiro Agente por completo</li>
+        <li>Consigo completar a frase: "Vou criar um agente de ___ para ___ que ajuda a ___"</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="page-nav">
+      <a class="prev" href="../00_comece_aqui/index.html">← Comece Aqui</a>
+      <a class="next" href="../02_primeiro_agente/index.html">Próximo: Módulo 2 — Construindo Seu Primeiro Agente →</a>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

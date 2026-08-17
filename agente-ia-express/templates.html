@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sistema de Templates — Agente IA Express</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- TIPO A — ABERTURA -->
+<section class="tpl-abertura">
+  <div class="container">
+    <span class="eyebrow">Tipo A — Abertura</span>
+    <div class="mod-num">01</div>
+    <h1>Mapa dos <span class="hl">Agentes</span></h1>
+    <p class="subtitle">Encontre uma oportunidade real e defina o primeiro agente que você vai construir.</p>
+  </div>
+</section>
+
+<!-- TIPO B — CONCEITO -->
+<section class="tpl-conceito">
+  <div class="container">
+    <span class="eyebrow">Tipo B — Conceito</span>
+    <h2>Você não começa escolhendo uma ferramenta de IA.</h2>
+    <p class="lead">Você começa identificando um problema real: uma tarefa repetitiva, demorada, baseada em informação e com resultado claro. A ferramenta vem depois — ela é só o meio, não o ponto de partida.</p>
+  </div>
+</section>
+
+<!-- TIPO C — DIAGRAMA -->
+<section class="tpl-diagrama">
+  <div class="container">
+    <span class="eyebrow">Tipo C — Diagrama</span>
+    <h2>O Método C.A.O.</h2>
+    <div class="diagram-flow">
+      <div class="diagram-step accent">CRIAR<br><small style="font-weight:400;color:var(--gray)">identificar o problema e construir o agente</small></div>
+      <div class="diagram-arrow">↓</div>
+      <div class="diagram-step accent">AUTOMATIZAR<br><small style="font-weight:400;color:var(--gray)">estruturar instruções, conhecimento e fluxo</small></div>
+      <div class="diagram-arrow">↓</div>
+      <div class="diagram-step accent">OFERECER<br><small style="font-weight:400;color:var(--gray)">transformar em solução demonstrável</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- TIPO D — COMPARAÇÃO -->
+<section class="tpl-comparacao">
+  <div class="container">
+    <span class="eyebrow">Tipo D — Comparação</span>
+    <h2>Ao terminar um módulo, o que você deve sentir?</h2>
+    <div class="compare-grid">
+      <div class="compare-col wrong">
+        <span class="tag">✕ Errado</span>
+        <ul>
+          <li>"Aprendi bastante sobre IA."</li>
+          <li>Muita teoria, nenhum entregável</li>
+          <li>Depende de assistir vídeo pra fazer sentido</li>
+        </ul>
+      </div>
+      <div class="compare-col right">
+        <span class="tag">✓ Certo</span>
+        <ul>
+          <li>"Eu construí isso."</li>
+          <li>Termina com um entregável concreto</li>
+          <li>Funciona sozinho, só de ler e aplicar</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIPO E — EXEMPLO -->
+<section class="tpl-exemplo">
+  <div class="container">
+    <span class="eyebrow">Tipo E — Exemplo</span>
+    <h2>Problema → Solução</h2>
+    <div class="example-block">
+      <div class="example-col">
+        <span class="tag">Problema</span>
+        Uma clínica recebe as mesmas 10 perguntas todo dia sobre horário, valor e convênio.
+      </div>
+      <div class="example-arrow">→</div>
+      <div class="example-col">
+        <span class="tag">Solução</span>
+        Um Agente de FAQ treinado com essas respostas, disponível 24h, sem depender da recepcionista.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIPO F — CHECKLIST -->
+<section class="tpl-checklist">
+  <div class="container">
+    <span class="eyebrow">Tipo F — Checklist</span>
+    <h2>Checklist de Início</h2>
+    <ul class="checklist">
+      <li>Escolher o local onde vai salvar os projetos</li>
+      <li>Separar os materiais desse módulo</li>
+      <li>Escolher a ferramenta de IA compatível</li>
+      <li>Iniciar o Módulo 1</li>
+    </ul>
+  </div>
+</section>
+
+<!-- TIPO G — WORKSHEET -->
+<section class="tpl-worksheet">
+  <div class="container">
+    <span class="eyebrow">Tipo G — Worksheet</span>
+    <h2>Ficha do Primeiro Agente</h2>
+    <div class="worksheet">
+      <div class="worksheet-field">
+        <label>Nome provisório do agente</label>
+        <input type="text" placeholder="Ex: Agente de Pré-Atendimento">
+      </div>
+      <div class="worksheet-field">
+        <label>Público</label>
+        <input type="text" placeholder="Quem vai usar ou se beneficiar desse agente?">
+      </div>
+      <div class="worksheet-field">
+        <label>Problema que ele resolve</label>
+        <textarea rows="3" placeholder="Descreva o problema real..."></textarea>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIPO H — TEMPLATE -->
+<section class="tpl-template">
+  <div class="container">
+    <span class="eyebrow">Tipo H — Template</span>
+    <h2>Template Mestre de Instruções</h2>
+    <div class="template-block">
+      <div class="tpl-bar">
+        <span>template-mestre-instrucoes.txt</span>
+        <button class="tpl-copy" onclick="copyTemplate(this)">Copiar</button>
+      </div>
+      <pre>PAPEL: Você é [função do agente] para [negócio/público].
+
+OBJETIVO: Este agente existe para [objetivo em uma frase].
+
+CONTEXTO: [informações do negócio, produtos, serviços, regras]
+
+TAREFAS: [o que o agente deve fazer]
+
+REGRAS: [o que sempre seguir]
+
+LIMITES: [o que o agente NÃO deve fazer]
+
+FORMATO DE SAÍDA: [como a resposta deve ser estruturada]</pre>
+    </div>
+  </div>
+</section>
+
+<!-- TIPO I — PROJETO -->
+<section class="tpl-projeto">
+  <div class="container">
+    <span class="eyebrow">Tipo I — Projeto</span>
+    <div class="project-block">
+      <span class="tag">Missão prática</span>
+      <h3>Construir o Agente #1</h3>
+      <p>Usando o Template Mestre de Instruções, monte seu primeiro agente funcional a partir da Ficha que você preencheu no Módulo 1. Teste com pelo menos 3 perguntas reais antes de avançar.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TIPO J — CHECKPOINT -->
+<section class="tpl-checkpoint">
+  <div class="container">
+    <span class="eyebrow">Tipo J — Checkpoint</span>
+    <div class="checkpoint-block">
+      <span class="tag">Confirmação antes de avançar</span>
+      <h3>Antes de ir pro Módulo 2, você já tem:</h3>
+      <ul class="checklist" style="text-align:left; max-width:420px; margin-inline:auto;">
+        <li>Um problema real identificado</li>
+        <li>A Ficha do Primeiro Agente preenchida</li>
+        <li>Uma pontuação no Filtro P.A.F.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<script>
+function copyTemplate(btn) {
+  const text = btn.closest('.template-block').querySelector('pre').innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    const original = btn.textContent;
+    btn.textContent = "Copiado!";
+    setTimeout(() => (btn.textContent = original), 1500);
+  });
+}
+</script>
+
+</body>
+</html>

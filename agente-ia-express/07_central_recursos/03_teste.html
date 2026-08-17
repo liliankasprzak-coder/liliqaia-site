@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>03 — Teste | Central de Recursos</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="brand">Agente IA <span>Express</span></div>
+    <a class="back" href="index.html">← Central de Recursos</a>
+  </div>
+</header>
+
+<section class="tpl-abertura" style="padding-top:80px; padding-bottom:50px;">
+  <div class="container">
+    <span class="eyebrow">Categoria 03</span>
+    <h1>Prompts de <span class="hl">Teste</span></h1>
+    <p class="subtitle">Use pra estressar o agente antes do cliente fazer isso por você.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 21</div>
+      <h3>Gerar perguntas ambíguas de teste</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Etapa 6 do Módulo 2</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[TIPO DE AGENTE]</span></div>
+      </div>
+      <div class="p-box"><pre>Gere 5 perguntas ambíguas que um usuário real poderia mandar pra um agente de [TIPO DE AGENTE] — perguntas que faltam informação pra serem respondidas direito.</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: "...um agente de agendamento de clínica..."</p>
+      <p class="p-next">Próximo passo: rode as 5 perguntas no seu agente e veja se ele pede esclarecimento.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 22</div>
+      <h3>Gerar perguntas fora do escopo</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Etapa 6 do Módulo 2</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[LIMITES DO AGENTE]</span></div>
+      </div>
+      <div class="p-box"><pre>Considerando que este agente NÃO deve fazer o seguinte: [LIMITES DO AGENTE], gere 5 pedidos de teste que tentam justamente isso.</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: "...não deve marcar horário sozinho, não deve dar desconto..."</p>
+      <p class="p-next">Próximo passo: confira se o agente recusou educadamente em todos os casos.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 23</div>
+      <h3>Testar tentativa de quebra de regras</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Etapa 6 do Módulo 2</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[REGRAS DO AGENTE]</span></div>
+      </div>
+      <div class="p-box"><pre>Aja como um usuário tentando fazer o agente ignorar estas regras: [REGRAS DO AGENTE]. Escreva 3 mensagens de tentativa, do mais sutil ao mais direto.</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: "...regra: nunca dar desconto acima de 10%..."</p>
+      <p class="p-next">Próximo passo: se o agente cedeu em algum, reforce a regra no Template Mestre.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 24</div>
+      <h3>Simular pergunta com informação faltante</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Etapa 6 do Módulo 2</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[CONTEXTO DO AGENTE]</span></div>
+      </div>
+      <div class="p-box"><pre>Com base neste contexto: [CONTEXTO DO AGENTE], gere uma pergunta sobre algo que NÃO está incluído nele. Eu vou testar se o agente inventa uma resposta ou admite que não sabe.</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: pergunte sobre um serviço que o negócio não oferece.</p>
+      <p class="p-next">Próximo passo: se o agente "inventou" resposta, reforce a instrução de admitir quando não sabe.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 25</div>
+      <h3>Simular situação que exige encaminhamento humano</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Etapa 6 do Módulo 2</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[TIPO DE NEGÓCIO]</span></div>
+      </div>
+      <div class="p-box"><pre>Gere uma mensagem de cliente insatisfeito/reclamando, realista para um negócio do tipo [TIPO DE NEGÓCIO]. Vou usar pra testar se o agente sabe encaminhar pra um humano.</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: "...uma reclamação sobre atraso de entrega..."</p>
+      <p class="p-next">Próximo passo: confirme que o agente reconheceu a situação e ofereceu encaminhamento.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 26</div>
+      <h3>Avaliar uma resposta do agente criticamente</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Depois de cada rodada de teste</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[PERGUNTA], [RESPOSTA DO AGENTE]</span></div>
+      </div>
+      <div class="p-box"><pre>Avalie criticamente esta resposta do agente. Pergunta: [PERGUNTA]. Resposta: [RESPOSTA DO AGENTE]. Ela está clara, correta e no tom certo? O que melhoraria?</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: cole a pergunta de teste e a resposta real que o agente deu.</p>
+      <p class="p-next">Próximo passo: aplique a sugestão de melhoria nas instruções.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 27</div>
+      <h3>Identificar por que uma resposta ficou ruim</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Etapa 7 do Módulo 2 (correção)</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[INSTRUÇÕES], [RESPOSTA RUIM]</span></div>
+      </div>
+      <div class="p-box"><pre>Estas são as instruções do agente: [INSTRUÇÕES]. Ele respondeu isto, que considero ruim: [RESPOSTA RUIM]. O que nas instruções pode ter causado isso?</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: cole as instruções completas + a resposta problemática.</p>
+      <p class="p-next">Próximo passo: ajuste especificamente o trecho apontado, não reescreva tudo.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 28</div>
+      <h3>Melhorar uma resposta específica</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Etapa 7 do Módulo 2 (correção)</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[RESPOSTA ATUAL], [PROBLEMA]</span></div>
+      </div>
+      <div class="p-box"><pre>Reescreva esta resposta corrigindo o seguinte problema: [PROBLEMA]. Resposta atual: [RESPOSTA ATUAL]</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: "...problema: resposta longa demais e sem tom amigável..."</p>
+      <p class="p-next">Próximo passo: use a versão melhorada como exemplo dentro do FORMATO DE SAÍDA.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 29</div>
+      <h3>Gerar bateria de testes completa personalizada</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Antes de considerar o agente pronto</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[TIPO DE AGENTE]</span></div>
+      </div>
+      <div class="p-box"><pre>Gere 6 perguntas de teste para um agente de [TIPO DE AGENTE], cobrindo: pergunta simples, ambígua, informação inexistente, fora do escopo, tentativa de quebrar regra, encaminhamento humano.</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: "...um agente de catálogo de uma loja de móveis..."</p>
+      <p class="p-next">Próximo passo: use como sua Bateria de Testes personalizada.</p>
+    </div>
+
+    <div class="prompt-card">
+      <div class="p-num">PROMPT 30</div>
+      <h3>Comparar duas versões de um agente</h3>
+      <div class="meta-row">
+        <div class="meta-item"><b>Quando usar</b><span>Depois de um ajuste grande nas instruções</span></div>
+        <div class="meta-item"><b>Preencher</b><span>[VERSÃO ANTIGA], [VERSÃO NOVA]</span></div>
+      </div>
+      <div class="p-box"><pre>Compare estas duas versões de instruções e me diga o que mudou e se a nova resolve os problemas da antiga: Antiga: [VERSÃO ANTIGA]. Nova: [VERSÃO NOVA]</pre><button class="p-copy" onclick="copyPrompt(this)">Copiar</button></div>
+      <p class="p-example">Exemplo: cole as duas versões completas do Template Mestre.</p>
+      <p class="p-next">Próximo passo: rode a Bateria de Testes de novo na versão nova antes de aprovar.</p>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="cat-nav">
+      <a href="02_construcao.html">← Construção</a>
+      <a href="index.html">Central de Recursos</a>
+      <a href="04_adaptacao.html">Adaptação →</a>
+    </div>
+  </div>
+</section>
+
+<script>
+function copyPrompt(btn) {
+  const text = btn.previousElementSibling.innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    const original = btn.textContent;
+    btn.textContent = "Copiado!";
+    setTimeout(() => (btn.textContent = original), 1500);
+  });
+}
+</script>
+
+</body>
+</html>
